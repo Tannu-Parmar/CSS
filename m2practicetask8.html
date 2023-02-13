@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Elements</title>
+
+    <style>
+        div{
+            background-color: rgb(24, 206, 206);
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }  
+        @media screen and (max-width:800px) {
+            div{
+                background-color: red;
+                color: black;
+            }
+            .hide{
+                display: none;
+            }
+        }  
+    </style>
+
+</head>
+<body>
+    <div>
+    <h1>Hide elements on different screen sizes</h1>
+    <p>Hello Radixweb Family..... Thank You......!</p>
+    <p class="hide">Hide The Elements</p>
+    </div>
+</body>
+</html>
