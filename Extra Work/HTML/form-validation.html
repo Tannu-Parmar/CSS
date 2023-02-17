@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div>
+          <a href="../index.html"><img src="../image/worklogo.jpeg" alt="logo" width="80px" height="65px"></a>
+        </div>
+        
+        <div class="link"> 
+          <p><a href="../home.html">Home</a></p>
+          <p><a href="../html.html">HTML</a></p>
+          <p><a href="../css.html">CSS</a></p>
+          <p><a href="">Bootstrap</a></p>
+          <p><a href="">JavaScript</a></p>
+          <p><a href="">JQuery</a></p>
+          <p><a href="">Mini Project</a></p>
+          <p><a href="">SQL</a></p>
+        </div>
+        
+      </div>
+      
+      <div class="main">
+        <div class="leftbar">
+          <ul>
+            <li>Day 1</li>
+            <ul type="circle">
+                <li>Assignment</li>
+                <ul type="square">
+                    <li><a href="form-validation.html">Assignment 1</a></li>
+                    <li><a href="resume.html">Assignment 2</a></li>
+                    
+                </ul>
+                <li>Practice</li>
+                <ul type="square">
+                    <li><a href="practicehierarchy.html">Practice 1</a></li>
+                    <li><a href="practicereportcard.html">Practice 2</a></li>
+                </ul>
+            </ul>
+          </ul>
+        </div>
+        <div class="about">  
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Form Validation</title>
+            </head>
+            <body>
+                <h1>Employee Details</h1>
+                <section>
+                    <form name="dataform">
+                        <label for="name">Employee Name:</label>
+                        <input type="text" id="name" required>
+                        <br><br>
+            
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" min="17" required>
+                        <br><br>
+            
+                        <label for="gender" id="gender">Gender</label>
+                        <br>
+                        <input type="radio" name="gender" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" name="gender" value="Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="gender" value="Other">
+                        <label for="Other">Other</label>
+                        <br><br>
+            
+                        <label for="desi">Designation:</label>
+                        <input type="text" id="desi" required>
+                        <br><br>
+            
+                        <label for="salary">Salary:</label>
+                        <input type="number" id="salary" required>
+                        <br><br>
+            
+                        <label>Location:</label>
+                            <select>
+                                <option value="-select-">-select-</option>
+                                <option >Ahmedabad</option>
+                                <option >Surat</option>
+                                <option>Baroda</option>
+                                <option>Nadiyad</option>
+                            </select>
+                        <br><br>
+            
+                        <label for="emial">Emial id:</label>
+                        <input type="email" id="emial" required>
+                        <br><br>
+            
+                        <label for="doj">Date Of Joining:</label>
+                        <input type="date" id="doj" required>
+                        <br><br>
+            
+                        <label for="no">Contact Number:</label>
+                        <input type="number" id="no" required>
+                        <br><br>
+                            <input type="submit" value="Submit">
+            
+            
+                    </form>
+                </section>
+            </body>
+            </html>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
