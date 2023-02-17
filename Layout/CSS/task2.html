@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Task 2</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            flex-direction: none;
+            margin: 20px;
+        }
+        .nav{
+            width: 10%;
+            height: 10%;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .icon{
+            display: none;
+        }
+        a{
+            color: white;
+            display: flex;
+            justify-content: start;
+            padding-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 2px white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        a:hover{
+            background-color: gray;
+            color: white;
+            border-radius: 10px;
+        }
+        .details{
+            width: 88%;
+            border: 2px solid black;
+            margin-left: 20px;
+        }
+        .mdetails{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .details h1{
+            text-align: center;
+            margin-top: 0;
+            background-color: black;
+            color: white;
+        }
+        .card{
+            margin: 20px;
+            display: grid;
+        }
+        .nav2{
+            display: none;
+        }
+        summary{
+            list-style : none;
+        }
+        @media screen and (max-width:1440px) {
+            .mdetails{
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            .details{
+                width: 75%;
+            }
+            a{
+                font-size: 2Opx;
+                margin-left: -10px;
+            }
+            a:hover{
+                margin-left: 0;
+            }
+            .container{
+                width: 100%;
+            }
+            .nav{
+                width: 18%;
+            }
+        }
+        @media screen and (max-width:1024px) {
+            .mdetails{
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            .details{
+                width: 75%;
+            }
+            a{
+                font-size: 20px;
+                margin-left: -10px;
+            }
+            a:hover{
+                margin-left: 0;
+            }
+            .container{
+                width: 100%;
+            }
+            .nav{
+                width: 20%;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .mdetails{
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            .details{
+                width: 75%;
+            }
+            a{
+                font-size: 20px;
+                margin-left: -10px;
+            }
+            a:hover{
+                margin-left: 0;
+                background-color: gray;
+            }
+            .container{
+                width: 100%;
+            }
+            .nav{
+                width: 25%;
+            }
+        }
+        @media screen and (max-width:425px) {
+            .nav{
+                display: none;
+            }
+            .icon{
+                display: block;
+                margin-left: 5px;
+                padding: 10px;
+                width: 95%;
+            }
+            .nav2{
+                display: block;
+                background-color: black;
+            }
+            .resp{
+                display: block;
+                position: relative;
+                width: 99%;
+                margin-top: -25px;
+                border-radius: 0;
+            }
+            .resp a:hover{
+                background-color: gray;
+                padding: 15px;
+            }
+            .container{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .mdetails{
+                display: grid;
+                grid-template-columns: auto;
+            }
+            .details{
+                width: 89%;
+            }
+        }
+        a ul li{
+            font-size: 17px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav2">
+            <a href="#" onclick="myFunction()" class="icon"><em class="fa fa-bars"></em></a>
+        </div>
+        <div class="nav" id="rnav">
+            <a href="#">
+                <details>
+                    <ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                    </ul>
+                    <summary>Public</summary>
+                </details>
+            </a>
+            <a href="#">
+                <details>
+                    <ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                        <li>Link 4</li>
+                        <li>Link 5</li>
+                        <li>Link 6</li>
+                    </ul>
+                    <summary>View</summary>
+                </details> 
+            </a>
+            <a href="#">
+                <details>
+                    <ul>
+                        <li>Address Details</li>
+                        <li>Family Details</li>
+                    </ul>
+                    <summary>HR</summary>
+                </details>
+            </a>
+            <a href="#"> 
+                <details>
+                    <ul>
+                        <li>Vehical Details</li>
+                        <li>Machine Details</li>
+                    </ul>
+                    <summary>Network Details</summary>
+                </details>
+            </a>
+        </div>
+        
+        <div class="details">
+            <h1>Details</h1>
+            <div class="mdetails">
+                <div class="card">
+                    <label for=""><strong>Name:</strong>abc</label>
+                    <label for=""><strong>Value:</strong>abc</label>
+                    <label for=""><strong>Extra:</strong>abc</label>
+                </div>
+                <div class="card">
+                    <label for=""><strong>Name:</strong>abc</label>
+                    <label for=""><strong>Value:</strong>abc</label>
+                    <label for=""><strong>Extra:</strong>abc</label>
+                </div>
+                <div class="card">
+                    <label for=""><strong>Name:</strong>abc</label>
+                    <label for=""><strong>Value:</strong>abc</label>
+                    <label for=""><strong>Extra:</strong>abc</label>
+                </div>
+                <div class="card">
+                    <label for=""><strong>Name:</strong>abc</label>
+                    <label for=""><strong>Value:</strong>abc</label>
+                    <label for=""><strong>Extra:</strong>abc</label>
+                </div>
+                <div class="card">
+                    <label for=""><strong>Name:</strong>abc</label>
+                    <label for=""><strong>Value:</strong>abc</label>
+                    <label for=""><strong>Extra:</strong>abc</label>
+                </div>
+                <div class="card">
+                    <label for=""><strong>Name:</strong>abc</label>
+                    <label for=""><strong>Value:</strong>abc</label>
+                    <label for=""><strong>Extra:</strong>abc</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("rnav");
+            if(x.className == "nav"){
+                x.className += " resp"
+            }
+            else{
+                x.className = "nav"
+            }
+        }
+    </script>
+
+</body>
+</html>
