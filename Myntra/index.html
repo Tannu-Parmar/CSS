@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myntra</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      .list-style ul li a {
+        color: #282c3f;
+      }
+      .list-items ul li a:hover {
+        transform: translateY(-1px);
+      }
+      .carousel-item img{
+        width: 100vw;
+        height: 68vh;
+      }
+      .img{
+        width: 199px;
+        height: 25vh;
+        /* margin:2px */
+      }
+
+      .img1{
+        width: 10vw;
+        height: 21vh;
+        /* margin:2px */
+      }
+
+      .search {
+        position: relative;
+      }
+
+      .serch {
+        position: absolute;
+        
+      }
+      ::-webkit-input-placeholder {
+        padding-left:22px;
+      }
+
+      footer{
+        background-color: rgba(239, 245, 247, 0.808);
+      }
+
+      @media screen and (max-width:1000px){
+        .img1{
+          width: 12vw;
+          height: 10vh;
+          /* margin:2px */
+        }
+        footer{
+          padding-left:2px;
+        }
+      }
+
+    </style>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light ">
+      <div class="container-fluid ">
+        <a class="navbar-brand ms-5 d-none d-md-block" href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi16RHrJJeI-0T__L8nwbbeWa6j82hrOrJB8vz1ts0w4xjr5deEMjDmpgVOS4p7RhGjS8&usqp=CAU" alt="image" width="60" height="60"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand me-5 mt-1 pe-5 d-block d-md-none d-lg-none" href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi16RHrJJeI-0T__L8nwbbeWa6j82hrOrJB8vz1ts0w4xjr5deEMjDmpgVOS4p7RhGjS8&usqp=CAU" alt="image" width="60" height="60"/>
+        </a>
+        <a href="#" class="link-dark d-block d-md-none d-lg-none"><i class="fa fa-search fa-lg ms-5" aria-hidden="true"></i></a>
+        <a href="#" class="link-dark d-block d-md-none d-lg-none"><i class="fa fa-user fa-lg ms-1" aria-hidden="true"></i></a>
+        <a href="#" class="link-dark d-block d-md-none d-lg-none"><i class="fa fa-heart fa-lg ms-1" aria-hidden="true"></i></a>
+        <a href="#" class="link-dark d-block d-md-none d-lg-none"><i class="fa fa-shopping-bag fa-lg ms-1" aria-hidden="true"></i></a>
+        <div class="collapse navbar-collapse list-items"  id="navbarSupportedContent">
+          <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link ms-2" aria-current="page" href="#">MEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="#">WOMEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="#">KIDS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="#">HOME & LIVING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-2" href="#">BEAUTY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="#">STUDIO<span class="position-absolute top-0 start-100 translate-middle ps-4 pt-4 badge rounded-pill bg-none text-danger d-none d-md-block d-lg-block">NEW</span></a>
+            </li>
+          </ul>
+          
+          <div class="search d-inline-block">
+            <i class="fa fa-search py-2 ms-2 d-none d-md-none d-lg-block serch" aria-hidden="true"></i>
+            <input  class="form-control w-100 pe-4 me-5 d-none d-md-none d-lg-block" type="search" placeholder="Search for products" aria-label="Search"/>
+          </div>
+          <div class="d-inline pt-3 ms-4 d-none d-md-block d-lg-block">
+            <div class="d-flex flex-column">
+              <a href="#" class="link-dark"><i class="fa fa-user fa-lg ms-3" aria-hidden="true"></i></a>
+              <p class="pe-5 ps-1 d-none d-md-none d-lg-block "><small>Profile</small></p>
+            </div>
+          </div>
+
+          <div class="d-inline pt-3 d-none d-md-block d-lg-block">
+            <div class="d-flex flex-column">
+              <a href="#" class="link-dark"><i class="fa fa-heart-o fa-lg ms-3" aria-hidden="true"></i></a>
+              <p class="pe-5 ps-1 d-none d-md-none d-lg-block"><small>Wishlist</small></p>
+            </div>
+          </div>
+
+          <div class="d-inline pt-3 d-none d-md-block d-lg-block">
+            <div class="d-flex flex-column">
+              <a href="#" class="link-dark"><i class="fa fa-shopping-bag fa-lg ms-3" aria-hidden="true"></i></a>
+              <p class="pe-5 ps-3 d-none d-md-none d-lg-block"><small>Bag</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+        
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner pe-5 pt-5 mt-5">
+        <div class="carousel-item active">
+          <img src="https://i.pinimg.com/600x315/cb/52/94/cb529499dbda67d18e6783e30eb1b3d2.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfYkcTDhWvaKKKa_tmn-ivE85gjAjckMHnblnzW0sl4Cry24X4EBf8KBis-PsN4_jVqP8&usqp=CAU" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://d1fv2cu4wmu6en.cloudfront.net/uploads/blog-media/2021-07-05/277/featured-277.jpg" class="d-block" alt="...">
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- deal of the day-->
+    <div class="m-5">
+      <p class="fs-4">DEAL OF THE DAY</p>
+    </div>
+
+    <div class="container-fuild">
+      <div class="d-flex mb-3">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFrZXVwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60 "alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNsb3RoZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60 "alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNsb3RoZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60 "alt="...">
+        <img class="img ms-1" src="https://images.pexels.com/photos/3965557/pexels-photo-3965557.jpeg?auto=compress&cs=tinysrgb&w=1600 "alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2F0Y2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">        
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1615281612781-4b972bd4e3fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJsdWV0b290aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1632935187086-49a9d8027292?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGVjb3JhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 "alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1632935190508-bd46801c14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGVjb3JhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+      </div>
+    </div>
+
+    <div class="m-5">
+      <p class="fs-4">BEST OF MYNTRA EXCLUSIV BRANDS</p>
+    </div>
+
+    <div class="container-fuild">
+      <div class="d-flex flex-md-nowrap flex-lg-wrap mb-3">
+        <img class="img ms-0" src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZHVjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2R1Y3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZhY2UlMjBjcmVhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 "alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1633810543462-77c4a3b13f07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJyYWNlbGV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1547658718-f4311ad64746?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW9iaWxlJTIwY292ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">  
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1593830566460-2464575a9a24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bW9iaWxlJTIwY292ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">      
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1631730486572-226d1f595b68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhY2UlMjBjcmVhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1511300961358-669ca3ad05af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Ymx1ZXRvb3RofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1634141628215-732e10d16bec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+
+        <img class="img ms-0 mt-1" src="https://images.unsplash.com/photo-1528387810833-7b46bb8e8778?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1581003989504-3e6ba26df4a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1vYmlsZSUyMGNvdmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://plus.unsplash.com/premium_photo-1670574914501-cca0ed190b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YnJhY2VsZXRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnJhY2VsZXRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">  
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1633810543462-77c4a3b13f07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJyYWNlbGV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">      
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1634833132196-fcbb1594e665?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJyYWNlbGV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1620012155141-57c538aaa2fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJyYWNlbGV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        
+      </div>
+    </div>
+
+
+    <div class="m-5">
+      <p class="fs-4">TOP PICKS</p>
+    </div>
+
+    <div class="container-fuild">
+      <div class="d-flex mb-3">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyZnVtZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1557170334-a9632e77c6e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcmZ1bWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1588177925144-2fd3e4e7ce57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcmZ1bWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1608979048467-6194dabc6a3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYXV0eSUyMHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmVhdXR5JTIwcHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">        
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJlYXV0eSUyMHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1620804587331-effc68d47d7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZXllbGluZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1627885793933-584e53987c14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Zm91bmRhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1557205465-f3762edea6d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZvdW5kYXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">
+      </div>
+    </div>
+
+    <div class="m-5">
+      <p class="fs-4">NEW IN TOP BRANDS</p>
+    </div>
+
+    <div class="container-fuild">
+      <div class="d-flex flex-lg-wrap mb-3" >
+        <img class="img1 ms-3 rounded-circle" src="https://images.unsplash.com/photo-1632670549453-7a3dfac254a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJyYWNlbGV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img1 ms-2 rounded-circle" src="https://images.unsplash.com/photo-1602751584581-2e0372975b46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJyYWNlbGV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img1 ms-2 rounded-circle" src="https://images.unsplash.com/photo-1517472292914-9570a594783b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2xvdGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img1 ms-2 rounded-circle" src="https://images.unsplash.com/photo-1630329273801-8f629dba0a72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3Roc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img1 ms-2 rounded-circle" src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c21hcnQlMjB3YXRjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">        
+        <img class="img1 ms-2 rounded-circle" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFrZSUyMHVwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img1 ms-2 rounded-circle" src="https://images.unsplash.com/photo-1515688594390-b649af70d282?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWFrZSUyMHVwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img1 ms-2 rounded-circle" src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c21hcnQlMjB3YXRjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">        
+        <img class="img1 ms-2 rounded-circle" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFrZSUyMHVwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        
+        
+      </div>
+    </div>
+
+
+    <div class="m-5">
+      <p class="fs-4">BEST BUYS</p>
+    </div>
+
+    <div class="container-fuild">
+      <div class="d-flex flex-md-nowrap flex-lg-wrap mb-3">
+        <img class="img ms-0" src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c21hcnQlMjB3YXRjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1549482199-bc1ca6f58502?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNtYXJ0JTIwd2F0Y2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60 "alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNtYXJ0JTIwd2F0Y2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNtYXJ0JTIwcGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">        
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1541140532154-b024d705b90a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8a2V5Ym9hcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://plus.unsplash.com/premium_photo-1671611822374-4719df5c89bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1632935187086-49a9d8027292?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGVjb3JhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60 "alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1632935190508-bd46801c14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGVjb3JhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+
+        <img class="img ms-0 mt-1" src="https://images.unsplash.com/photo-1528387810833-7b46bb8e8778?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1581003989504-3e6ba26df4a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1vYmlsZSUyMGNvdmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://plus.unsplash.com/premium_photo-1670574914501-cca0ed190b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YnJhY2VsZXRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnJhY2VsZXRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">  
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1633810543462-77c4a3b13f07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJyYWNlbGV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">      
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1634833132196-fcbb1594e665?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJyYWNlbGV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1 mt-1" src="https://images.unsplash.com/photo-1620012155141-57c538aaa2fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJyYWNlbGV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+      </div>
+    </div>
+
+    <div class="m-5">
+      <p class="fs-4">DEALS ON TOP BRANDS</p>
+    </div>
+
+    <div class="container-fuild">
+      <div class="d-flex mb-3">
+        
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFrZXVwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60 "alt="...">
+        <img class="img ms-1" src="https://images.pexels.com/photos/3965557/pexels-photo-3965557.jpeg?auto=compress&cs=tinysrgb&w=1600 "alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNsb3RoZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60 "alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2F0Y2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">        
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1629051192954-55d807199226?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZSUyMHdhc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1602726428221-9af5b227ed5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyZnVtZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"alt="...">
+        <img class="img ms-1" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNsb3RoZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60 "alt="...">
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start  text-muted">
+
+         
+      <section class="">
+        <div class="container-fuild text-center text-md-start mt-5 ps-5">
+          <!-- Grid row -->
+          <div class="row mt-3 ps-5">
+             
+            
+            <div class="col-md-2 col-lg-2 col-xl-2 ms-1 ps-2 pt-5 mb-4">
+                
+              <h6 class="text-uppercase text-sm-start fw-bold mb-4">
+                Online Shopping
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Men</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Women</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Kids</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Home & Living</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Beauty</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Gift Cards</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Myntra inside</a>
+              </p>
+            </div>
+             
+            <div class="col-md-2 col-lg-2 col-xl-2 ms-1 ps-2 pt-5 mb-4">
+                
+              <h6 class="text-uppercase fw-bold mb-4">
+                USEFUL LINKS
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Blog</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Careers</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Corporate Information</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Whitehat</a>
+              </p>
+              
+            </div>
+
+             
+            <div class="col-md-3 col-lg-2 col-xl-2 ps-2 pt-5 ms-1 mb-4">
+                
+              <h6 class="text-uppercase fw-bold mb-4">
+                Customer Policies
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Contanct Us</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">FAQ</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">T&C</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Terms Of Use</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Track Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">shipping</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Cancellation</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Returns</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Privacy Policies</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Grievance Officer</a>
+              </p>
+            </div>
+             
+            <div class="col-md-3 col-lg-2 col-xl-2 ps-2 pt-5 ms-1 mb-4">
+                
+              <h6 class="text-uppercase fw-bold mb-4">Contact us</h6>
+              <p>New York, NY 10012, US</p>
+              <p>info@example.com</p>
+              <p>+ 01 234 567 88</p>
+              <p>+ 01 234 567 89</p>
+            </div>
+
+             
+            <div class="col-md-3 col-lg-2 col-xl-2 ps-2 pt-5 ms-1 mb-4">
+                
+              <h6 class="text-uppercase fw-bold mb-4">Keep In Touch</h6>
+              <a href="#" class="link-secondary ps-1"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="link-secondary ps-3"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="link-secondary ps-3"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="link-secondary ps-3"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+              </a>
+            </div>
+             
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+
+      <!-- Copyright -->
+      <div class="text-center p-4 bg-secondary text-white" >
+        Copyright&#169;
+        <a class="text-reset fw-bold" href="#">Myntra.com.</a><span> All Right Reserved</span>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
