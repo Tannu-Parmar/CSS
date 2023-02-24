@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav
+  class="relative flex w-full flex-wrap items-center justify-between bg-neutral-900 py-3 text-neutral-200 shadow-lg lg:flex-wrap lg:justify-start"
+  data-te-navbar-ref>
+  <div class="flex w-full flex-wrap items-center justify-between px-6">
+    <button
+      class="block border-0 bg-transparent py-2 px-2.5 text-neutral-200 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+      type="button"
+      data-te-collapse-init
+      data-te-target="#navbarSupportedContent4"
+      aria-controls="navbarSupportedContent4"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="[&>svg]:w-7">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-7 w-7">
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+      </span>
+    </button>
+    <div
+      class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+      id="navbarSupportedContent4"
+      data-te-collapse-item>
+      <ul
+        class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
+        data-te-navbar-nav-ref>
+        <li class="p-2" data-te-nav-item-ref>
+          <a
+            class="text-white disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref
+            >Home</a
+          >
+        </li>
+        <li class="p-2" data-te-nav-item-ref>
+          <a
+            class="p-0 text-white opacity-60 hover:opacity-80 focus:opacity-80 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref
+            >Contact Us</a
+          >
+        </li>
+        <li class="p-2" data-te-nav-item-ref>
+          <a
+            class="p-0 text-white opacity-60 hover:opacity-80 focus:opacity-80 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref
+            >About Us</a
+          >
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    <!-- Right elements -->
+    <div class="relative flex items-center">
+      <!-- Icon -->
+      
+      <div class="flex justify-center space-x-2">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="inline-block rounded bg-white px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-black hover:text-white hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+        data-te-toggle="modal"
+        data-te-target="#exampleModalFullscreen"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        Login
+      </button>
+
+      <!-- Modal -->
+    <div data-te-modal-init class="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+      <div data-te-modal-dialog-ref class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[0px]:m-0 min-[0px]:h-full min-[0px]:max-w-none">
+          <div class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600 min-[0px]:h-full min-[0px]:rounded-none min-[0px]:border-0">
+              <div class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+                  <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200" id="exampleModalFullscreenLabel">
+                    Modal title
+                  </h5>
+                  <button
+                    type="button" 
+                    class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none" data-te-modal-dismiss aria-label="Close">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  </button>
+              </div>
+    <div class="relative p-4 min-[0px]:overflow-y-auto">
+      <section class="bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                <img class="w-8 h-8 mr-2" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxETEBUSEhIVFhUVFRcVFxcWFRgXGRYYFhYWFxUXFhcYHSkgGRomHRUVITEhJSkrLi4uGCAzODMtOigtLisBCgoKDg0OGhAQGy0lICUtLS4tLSstLS01LS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMgAyAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAABAUGBwECAwj/xABEEAACAQIDBQUEBggFBAMBAAABAgADEQQSIQUGMUFRBxMiYXEygZGxFEJScqHBFiMzYoKS0dJUssLh8ERTk6JDg6Mk/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAIBAwQFBv/EADURAAIBAgMECAUEAgMAAAAAAAECAAMRBCExEkFxgRNRYZGhsdHwBSIyweEUQmLxI1IzcoL/2gAMAwEAAhEDEQA/ALwhCEmRCEIQhCEIQhCEIQhCEIQhCQHtR3q+j0votJv11VfER9SmdD/E2o8hc6aGTLaOPp0KZqVGso+JPIKOZ8p583nxor4urVC1VzsT42+A4cLCwHIWHKbcDQ6R9ptB59Ux4uvsjYX6j4Dr9JMOzbe7urYeu36pjZSTpTY+fJTfXkDr1lvzzJgW1I98tTs83s9nCV2/douTx6IT/l+HSasdhNaqcx9/XvmTBYvZboX5H7endLHhCE5E68IQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQhCEIQnOtUVVLMwUDUkmwHqTCE6TViALnQDUyN1t4qlVimComqedR7rTXn5E6eY8ryAb/490buMRinq1bKzLRsEpXBIUqfaY3BvYEC3G+ltKi1RtkayiriFpqWtce9OvleNHaDvMcZiCFJ7mldaY1F/tVCDqCeQPAAcDeRg1WtbMbdLm3wmzYekeDsPvr/AEJnM0wDowb0uPmJ6GkpRAthl1GcioadS7bVz1FSJvRezAxyvGmOdF7qDLZhrLoZYW6W82MxFUUPpNMOEuoqoD3gX2gCACWAFzc3IueRtL3r7TRgDSoVQfrIzJb72ZifgDKPLMCGQlWUhlYGxVgbgg8jLl3D3uXG0sr2XEUx40+0OHeKOl+I5E+YvxcbhejO2oy8p2sDiOlXZYnaHbr+Z3/SrIbYnDVaPjyZrZ0ueFjoWB6gHXSPOA2nQrC9KordQD4hy8SnUe8RW6gggi4OhB5xg2nurh6niQGjUFyGp6WOUgeEcrkHw5SSOPGc/Kb/AJxpn4fiSGEhh2tjMEQuKU1qN7CqvtDUAAnS51GjWJJNibSVYHHU6yCpScMp5j5Ecj5GBFoK4bLf1RTCEJEeEIQhCEIQhCEIQhCEIQhCEIRl3g213ACIA1Z/YXkOWZra2voANWOggBeQzBRczptnbVPDix8VRvZprxPQn7K35/ON1DY9bEMKmMbwg3Witwo6E+6/HXUeza0U7C2H3Z7+uc9dtSTrlv8AhfgNNABYcyzxia6ojO7BVRSzMeAAFyT5WjXtpECl827vWN+2doUcJhmditNVUhAFvdrHKFQEZjflcc9RxnnLG4svUZ2YszMWZm4kk3JMfd8d6amMxTVAzLSW60kvoF+0RwzNa59wubCMzYoniEPqif0nbweGNJLnU+HZ6zmYnEBnts3A0zI+0TBx5zYGd+/U8aVP3ZgfnOJty0E22MyMyMPlUjiQfKYi3AtoR74infCtZh56SZU4upiwwweMqYeulei2V0NwfmCOYIuCPObMJzqLpAgEWMopuVNxL63X3hpY2gKqaMLCoh4o35qeR5+oID3POm7u2quDxC1qettGUkgOvNT+R5ECX1sba1LFUVrUWurcuanmrDkw/wB+BBnn8Xheha4+k+7T0eExIrLY6j3eLatNWUqwDKwIIIuCDoQQeIkD2vs+ts6qcXhbtQY/rqRJ8IvoT+7ro3FSeYJtYE51KYYFWAIIIIIuCDoQQeImZWtNDoG47j1e/GJNk7Tp4iktWkbqeI5qeasORH+/AxfK92ffZu0TQJP0av4kvwUE24nmh0OvsMpOssKDCxykU3LDPUZGEIQiyyEIQhCEIQhCEIQhCINs7QXD0WqNrbRV5sx9lR/zgDGrdnZpJOLreKrU1GoIAPAr0FtBYnTnrYI8YfpePFK/6qhe4uRdhbOeGtjlTiCCbiTCNoLSpfna+4acd5hK47QN+Fpl8Jh3AqcKlSxIS41QW+v1PL19mVb37X+i4OpVV0WpltTzk2LHoADcgXNrW01sLkedatUsxZmLMSSWJJJJNySTqSTzm3A0Fc7b6Dr3n8ecrxLEqUUm/Z1Tq2HJ1FSmP4wPwMz9BrWuFLDqLN8onDCbCdqwM5RqVVyIHNfyJs9NxxQj1UzE6iu9suZrHlc2+E5SQLStn2twHCEyJibASYkc1a4B6zUia4I+G3T8/wDhnUyZjORtElRZIdyt5nwVa+rUXsHQdOTL+8Px4eYZXE4EGI6K6lW0MvpVGQhl1E9KYPFJVprUpsGRwGUjmDO8pfs/3tOFqd1VN8O51P8A22P1x+71HvHCxuVHBAIIIOoI1BHUTzuIw7UXsdNx97+uejw+IWslxrv99XVIv2h4HPhRWABag6vw4oxCVAf3bEMR+5HrYGL73DU3uWNspYixYqcuYjle1/fMbw0s+Erp9qjUA9SjWMQbjV8+FDeYA9AiL/pleqcDJ0q8R5f3JDCEIkuhCEIQhCEIQhEu0cT3VGpUtfIjNbrYEgRVGHfZyMDUtzKD/wDRb/hJAuQIrnZUnqibcShag1Qkkuw1vodM1/W7kE88oj5tDGJRpNVqsFRBmYnkPzPIDmTOG76KMMmUWUl2A6BnZrfjK97TN7qdRXwVHI9mtUYkaMp9kDmQRqZbSpNWqWHPsEqNRaNME+z77pCd5t6a2MrtUe2S5FOm3BF5DTi3C55nysAzd4vOmv8ADdf6zQ4eoPqn+UzQ5hxB+BndR1UBdkgDsmBqYqEsjC56m/MU2onlUX0Kt87QGHpHg7D76n/ReJRUmwqDzjh6ZlZp4pNC3gfO86vQC6hww8rj8CJpBTN1EsFt0zOXJ+fXumFEyTNjMKsmV3nfAt4vXSLGEbw1jcco5NqLjnCUVRnecjODiKWE5MsmKptOIMsfs43xKFcJiG8FwtJz9UngjH7J5Hlw4cK7yTYJKq1FaqbLf1NFGuaLbS/3PQu8NTLhK7DiKNS3rkNvxtNN38EKNNqa8A5t6ZVtIZuft+riaK4aqpZldTnP1qdM5iGJ4m6ot+YbXgSZ/gaASmFAI52JuRc3tfna9p56rSal8jazv0aq1jtrppwO8RRCEJTNMIQhCEIQhCEIyb5Ui2CqgcRlb3K6k/hePcbtvYmjTw1Rq5tTyFWtxOYZbL+8b6SVvcWivbZN+oyI7xbwth9lB6BGZ3ekjZgCqh3HeAHUnKBa3DMDKVBElO+FFlYK4NhcWDaKy2VsvEWICHzuZGO7p/v/APqf6TsYZGSmDTAN9bm3LlOf0wYkOCLZZZ/nwgDOi4l/tN7zf5zT6OvJx/ED+Uz9Gbk6H+MfIzUKlUap3EH0lFVaL6sP/QI852+lseKofVF/K0x3yH2qSfwXT+s5Nhao4qfheczmHEfON0w/cCOX9ypcLf8A42B/6tb0nVrX8IsOl7/jaZSaCZUy0Slr3zmzGbKZqYKZMTdMkxzwbXS3TSNpEVbPezEdR+I/4ZBiMLiKSJrlnVxOcmZtILTi7A7PaowAHGIlMsPcLZupqPoiC7MeF7Xt8NT098WrUFNC53QVHqVFprqT3DeeQjtszZwwODeobd66hR5dOPnqfQRbulvOuKBpsbVUGo4B1GmYefUfDyiG+u9IrNkp+wunrIhQxz06i1KbFXQ3VhyP59Lc7zD+jNWmTU+s58Ozhab0xoo1gtHOmotxzuW49R357jPQ0Iw7p7wpjKOYWFRdKiA3seo/dPL4co/TjMpQlW1E9Ejq6hl0MIQhFjQhCEIQlOdq+8qVmTD0QzLSYsXBOVntawA0IGviPU204yftV3jfDYYUaYYPiAyl7aKgsHAPDMc1tNQLnTSUoD0nTwOG2v8AIeXr6THiqn7Bbtv5ZeMmOEqjG4QqwAq0VUNw1VbLTqddAcjcNMh11tD8SjI5R1KkHUGLNl7Vq0ai1EbUddQQRYgg8QQSCOYMllfBUMXSNWgq5gLuhuxo9fMp0biOB5E3MlSh9LfKdSRoe0Dd2zIHG0dpc+oHUdhO/rvx67QPvBMi3lFuNwXdsVemQR9k/iONx0I0MTGlS6uPcp/OaAcR/E+H4ilqDf7DkD5XmqsRwM6jFPwzE+pv85z+jryqD3hh+UGosNcwYeThowq1b/NTPIg+kqanRbRweIt5whCE0SmbBpkiaTYGEUibAzpSaxB6TkHm0JEdnnIzOGuVUc+HryAHnwkkwGw1pr32LORRwp3s7EAGx5pxtb2uuTRojVFTXkN55e+2Z1psxNt2p3DnOW7WwWqnOfCi+054KBqeOha3LlxPmt3o3mXJ9Fw2lJdL31c8z8dfP5Ne8O9DOO6ojJSAsFGlwDfgNOOtuupudZGO8JiKpYh33aDq7T1nwG6PsgAqu/U9fYOpfE74rNQmYzRKGMV7NwNSvWSjTF3dgo/MnyAuT5Ay4kAXMgU7mwk+7JtlO1V8TchFBQWNs7MASD1UCxt1KnlLViHY2zkw1CnQT2aa2v1PFmPmSSffF081iK3TVC27dwnpsNR6GmE7+MIQhKZfCNO8m2qeDwz16muXRVvYu59lR/zQAnlHaUZ2qbxU8RiFSkzNTpAjlkJJ8TJpc8ALk200A4m2hTDt830jM++2JUfZFhqdPfZI9vBtmpjKxrVmbMdAB7KjkoF9AP8Ac3JJjUcOOTD33E1FWAqCdU/pKtrkd9piC16el/A/a/jNu6fkwPoQYowONr0HDpdWU3BInAETZWI4G0tGFGqO3fcdxiM7HJwp4giS7C7w4bErkxSCk/J1U92TY62F2pG5v4QUJAuotE+1d1nVe8pkOhvZlKkG3HKwNm5Dwm9wfCLSNis3X42Pzjjsvb1agb0yFvoctxmHRhezDyIkU8PUpfQ/Ij34CZ6zBjcpzB9QL9/jG/EUWRirAqwNirAqR6g8JzEmK720agC18MrDictl1HAhLd2D55ZoKmzHubPSJ6IHv6+NFHuWOKlZT865dnpe/hKiaZFgTfty8bW8ZEoSVmhgD7LN6u4/yrRNviZgYXAji4PozD50ZZ038W7omX+y9/4kVm602PKS22ycvtVw3/1up+AQgROdt4RFIp4VS32nY1FPrTqZre5hDpWOiHnYfeGz/Icrn7ecZMJs2pUJCKzEC5CKWIA4kgDQecd02CtIB8RVSkpUMASHZlJtdQpswvp4SxHNdDEuN3rxDWCtkC+yBpk+4x8S+gNowVajMbkkk9ZnrVqgFhYHqGfjp3CaqOE2s207cvDXvMlDbyUqFxg6fi1He1NWIP2enHiMoYWzJGbF7Vq1Td2JPy8gOQ8hpESCbFbRqFF0G0TcnX3rLHFEnYtpp705zOczYPOcBNYmSoig5Trnltdkm7+WmcZUHicFaQI4J9ZveRYeQPWV1ulsRsZi0oC4X2qjD6tNbZj66gDzYT0TQoqiKiAKqgKoGgAAsAB0tOb8Rr2Xoxv14fny4zXgaF26Q7tOM6whCcedWEIQhCVl2s71ZF+g0m8TgGswPsodRT0NwW4kfZI45pU/et1v66/OekMfu/hK5JrYak7Hixprm/ntm/GMeN7Ntm1BYUnpn7VOo1/g5ZfwnSw2MpUk2bHjln4zHWwzVGubGUXnH2UP8Nv8s1Kp9k/wn+stzHdkVA27nE1E694i1L+mXJb8YyY3slxin9VWouP3iyN7hYj8Zq/VYap9VuY9byr9PUXS44H82le9yv7w+8P6THcdGX5fOSfG7g7Tp6nDMw602R//AFU5vwjJjtl4ij+2oVad+Gemy39Mw1gMPhnN1tyPoftJ2qy6k8wPSI+5qchm9PFNTmHFfwm03Wq3U/GWfpyPpdhzv5xDUJ1VTyt6zj3vlN1M6951VT7h+U5x6S1VPztccLSpgjDJbHjeF4XMIS68UUbwmpMzMStiTNKIFmIATaAiCmLx3qWEzN7XE0m9IzTOXUOd5paZE2YSV9m27v0vFhnF6NGzvfgxv4E1FiCRqOgPWJUcU1LHdGQGowUamWN2Y7vfRcJ3ji1WvZ2vxVP/AI0tfjYknQG7WPASaQhPNVHLsWO+d5ECKFG6EIQiRoQhCEIQhCEIQhCEIQhCEI3Y3YuFrG9XD0ah6vTVj7iReMmM7O9mVCT3BQnmjuvwW+X8JLIR0qOn0kjnIKg6iVvjOyTDH9liKqffC1B7rBT+JjLjeyPEg/qcRScdXDUz8AGH4y4oS9cbXH7u+Vmih3SgsZ2c7TQkCgHA+slRCD6AkN+EYsXsTFUv2uGrJbm1JwPcSLH3T01CXL8RcfUAYpw43GeVpmem8XsvD1TerQpVD1emrf5hGXF7g7MqMWOFVSfsM6D3KrBR8JavxFDqp8D6RDQO4zz9CXJieyXBm5p1q6X4AlGA9PCD8TGXF9kNcfssVTb76MnyLTQmNoHfbiDKalCpuErWZQ6yXYns02mhIFJKg6pVSx9M5U/hGTE7tY2nfPhawtxPdOR/MBYj3zStam2jDvEwtRcaqe4xJTpFmCqCWYhQBxJJsAPO89Bbn7BXB4VKOmc+Oow5u3H3DRR5CV92R7v95UOMqDw0iVpg86n1m/hB6cW6rLenL+I19pujG7Xj+PPhN2AobK7Z1OnD8+UIQhObOhCEIQhCEIQhCEZcVvTg6blHrqGU2Isxt7wLTn+mOA/xC/yP/bH6N+o9xi7a9Y74/QjCN8cAf+oX+Vx/pjhgNq4etfua1OoRxCOrEfeANx75BRl1EkMDoYuhCEWTCEI07U3hwuHdUrVQjMLgWZrDq2UHKOOrWGh6GSFLGwF5BIGsdoQhIkwhEm0doUqCGpVcIotqfM2Gg1MZ2342cP8AqD/4qp+SRlR2zAJ5RS6jUjvkjhI3+nWzv++f/DW/sijDb24B+GKpj757v3frLSTScZlT3GAdTkCO8R8hNKbhgCpBB1BBuD6GbxI0IRBtPatHDqGrVAgY2F7m5sTwAvyiD9McB/iF/lf+2MEYi4BkbQG+P0Ix0d7MCzKi4hSzsqKLNqzEKo4cyQI8VqqqpZiAALkngBIKkaiSCDOkIw/pjgP8Qv8AI/8AbD9McB/iF/lf+2N0T/6nui7a9Y7xH6EQbP2pQro1SlUDIpKs2oAIAYg3tyYH3xCd8MB/iB/K/wDbICMdAZO0OuPsIz4LeXB1qi0qdZWdr5VswvYFjxHQE+6EhgVyIkgg6SA9pu6eFoYcYiihV2q2bxMwbOHYmzE2Nxy6yCbAwS1MVRpuLq9RVYcLhmAOo9Zbna04GABN7d8nD7ryp9jYn/8Aopd0HNTMuT2R47+H2tONuOk7uDZmw+ZzzzPvdOHjAErgKuWWnjLC3r7OMImGq1aGZGpoXsWzKwXUg31va/OVjhcRUpsrI7KV9kqbFfun6p9PPkTJbvTt/aVMGhi2rKtRfZKUQGAOtnpgX5XF+cR7mUMFXxKJiHYAkWWwCs1/CrNfQHQeptpcXaht06Raq21wzyi1iHqhaKkccs5dOxqz1MPSepbOyKWsLAkgXIHIHj74vmqiwsOAm08+dZ3hOGMxSUqbVXNlRSzHoALmedtvbSqYnEviG0LNdRxyqPYUegAll9pu3AWp7PVrFyrVTyVb+EMeQ0zHyA6yKb6YLBUjTfCvmXKEcKLkFQBmN+vz9Z18AgpgM2radgHrORjndyQui2v2k+ksDs4279Iwopsf1lEBTrqU+ofdYrrqcoJ9qTCUBunvEuFxSVBmtfKwt7StbOABxOgIHNlXlL7pVFZQykFWAII1BBFwR5THjaHRVLjQ5+vvtm3B1zVp56jI/Y8/O8b9ubDw+LQJiELKpzCzMtjYi/hPQzz/ALawApYmtSW+WnUdBfjZWIF/OwnpSee968Qgx2JBB/bVOQ+0fOafhjNdlvlbSZviS2CsBnJh2fboYPFYLvK9Is+d1zB3XQZbCwNuZ5RFvn2ffRqZxGFdyi+2rHxKDpmDC1x1HLjJd2UODs+44d6/H3SS7ay/Rq2b2e6qX9MjXiPiqtPEkA5X0liYZKlAXGdpRO7m8eJwjg0nst9UOqN1zKOZ+0PF5ngb12NtJMTQSsnsuL2PFSCQym2lwwI9086/S6fR/gP6y6+zBLbPVrEB2ZhfoLLoPVTLviVJQoca3tx1mf4dXdmKNe1r+I9Y67e3bw2MCjEIWyZspDMpXNa/A2PAcbzz7jMJkqOg1Csy39CR+U9NzzhtTE0+/q6H9o/IfaPnI+GOxDKTkLfeT8TW2yyjM3v4SxuzPdjCtQTFPTzVlclWLGwIAK2UG2l+csDH4NK1JqVQZkcZWFyLg+Y1EjXZg4Oz1I4Zz/lSS6YcU7Gsxucjl2ZzbhVHQLlqBfmJVe9/ZoqoauCDHLq1EnMSOtMnW/kb35dDWa0rHUcDqOHqJ6glWdqmzcHTIrhgldzrTAuag5tYez68D6zdgsYzMKb59R9fXvmLG4QKu3T5j09O6L9ztv7PGAahUC0QEbvFu1qoayuym5YsbgFbki4tcWJiWz90vp+IZ8LSNDCg2zMS3DjlufEx6XsOZkZ+kopsQ+h1BFuHIi8uDs/3uo4imuHIWnVRbKoAVaigcVUcGAFyvvHMLZXRsMGenc317O22/wC0Sg/6khKgtbTLXsvu4DWOW7u5OEwjipTVmqAEZ3a5142AsB8JmSSE47uzm7G5nXRFQWUWEqTtO3uw2IonC0sxdKqsWsMllDg2N73ubagSvtjY0UcRSq2v3bK9uuU3A/CEJ6CjSWnT2BofvOeyiods6+mcudq+F21hKiKrqUIyu4W6OQbEFGN+Go6GUxtHBVcLXalUXLUQ2I4gjqOqkfEGEJmw3+Ks9FdBn9pZVprVUO2ufgZZm4/aHmFPDYhXdyy00dbE2Og73MRe1/aFyQNRcXaV71b4YfA2WoGaoyllVQOV7FiToCRbS8zCV1MJTOIVdxBJjCqwQ9hAlT7Dx2DxGJq1doJUq1Kz+EUzbKf5lJGoUAXtl4cJN95dztkYXDtVqI638Clajk52BtYM1iRYnXTSEJZiAwrIqsQDuB5ZdURUQBrgG28ynWtfjfzlo9nW/IC0sJVV2ZnCU2W3hzHgwJHhBNwRewuLAKCcwmjEItRCG7T3AxEQUvmWT7ePb9HBUu9rE2JsqqAWY9FuQOFzqRwnnzbuNWtiq1Vb5alR3F+NmYkX89YQmb4egWn0g1OUuxADtsndJpuFv3QweFNCrTqN4y4NPIfatcEOy9BqCeJ4W1Vb39pVOvhmoYam6mqMrs9gVU6FQFJBJGnHgYQmg4SmX6QjOIGIXoxp/cj26m4uKxbKWRqVG/iqMLEjpTU6sfPh8peuCwqUqaUqYsiKFUdABYQhOTi671Hs2gl2HpKiBhqY1bzbz4fAqjVsxLkhVQAsco1PiIFhcDjzHnPPWOrB6tRxwZ2YehYkfOEJ0MBTC09san7GVV1FR9lt3v7SzezXe+hTpU8GyVDUaoFUqFK+LIozXYHiCTYHT4Szcdi0o02q1DZEBZj0AhCZMbSUVRb92ZltFrUyBu0lcbc7Wafd2wlNs5uM1QCy9CFUnNz58oydn+MwtXGB8UKtbFVH8BYKyKeTEFsxYWJ4WUD4EJubDJTpuq5ZE338L9UpPzMrNn5d0U9raYHvjkuuKABfKBkYEXGfW4e1jcA3uAeor3D4hqbh1JDKQQQSCCDcEEagg2NxqJiEswwtRUXvcDXt+0WpTVnLdstXd3tSUoqYqm71NAHphbt95SVAb7vHovCEITO+CpXvbXtjmu65az//2Q==" alt="logo">
+                Radixweb    
+            </a>
+            <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                        Sign in to your account
+                    </h1>
+                    <form class="space-y-4 md:space-y-6" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="">
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                  <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                  <label for="remember" class="text-gray-500 dark:text-gray-300">Remember me</label>
+                                </div>
+                            </div>
+                            <a href="#" class="text-sm font-medium text-black hover:underline">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
+                        <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                            Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
+    <div
+      class="mt-auto flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50 min-[0px]:rounded-none">
+      <button
+        type="button"
+        class="inline-block rounded bg-black px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-white hover:text-black hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+        data-te-modal-dismiss>
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</nav>
+<section class="overflow-hidden text-neutral-700">
+  <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+    <div class="-m-1 flex flex-wrap md:-m-2">
+      <div class="flex justify-center m-auto my-5 ">
+        <div
+          class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+          <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg"
+              alt="" />
+          </a>
+          <div class="p-6">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center m-auto my-5">
+        <div
+          class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+          <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg"
+              alt="" />
+          </a>
+          <div class="p-6">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center m-auto my-5">
+        <div
+          class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+          <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg"
+              alt="" />
+          </a>
+          <div class="p-6">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center m-auto my-5 ">
+        <div
+          class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+          <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg"
+              alt="" />
+          </a>
+          <div class="p-6">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center m-auto my-5">
+        <div
+          class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+          <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg"
+              alt="" />
+          </a>
+          <div class="p-6">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center m-auto my-5">
+        <div
+          class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+          <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+            <img
+              class="rounded-t-lg"
+              src="https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg"
+              alt="" />
+          </a>
+          <div class="p-6">
+            <h5
+              class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</html>
