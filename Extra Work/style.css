@@ -1,3 +1,4 @@
+
 body{
     padding: 0;
     margin: 0;
@@ -50,7 +51,7 @@ body{
 }
 
 .link{
-    padding-left: 570px;
+    padding-left: 650px;
 }
 
 .link p{
@@ -59,11 +60,11 @@ body{
     padding-top: 10px;
 }
 
-.link a{
+/* .link a{
     text-decoration: none;
     color: white;
     font-size: 20px;
-}
+} */
 
 .main{
     display: flex;
