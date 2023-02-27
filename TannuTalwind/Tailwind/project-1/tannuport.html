@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        fontFamily: {
+          sans: ["Roboto", "sans-serif"],
+          body: ["Roboto", "sans-serif"],
+          mono: ["ui-monospace", "monospace"],
+        },
+      },
+    };
+  </script>
+
+  <style>
+    .img{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThRnEqtOUjlTXj-9e_DB-NW4xO57e5qkwTag&usqp=CAU");
+      background-color: #cccccc;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .piImg{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdowvfopTPdH7TPIVkE9XriiGOXPyxultumiSMCbctfIO6Ifc9YwMyrkWwCBJHpvmLLKA&usqp=CAU");
+      background-color: #cccccc;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .edImg{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCd5zNSfuI189Eghdfq-1NTfQ1GDQd7WFacg&usqp=CAU");
+      background-color: #cccccc;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .tpImg{
+      background-image: url("https://dynamics.folio3.com/blog/wp-content/uploads/2022/08/IT-Project-Management_-Steps-Methodologies-Examples-_-Best-IT-Project-Management-Service-consultants-1280x720.png");
+      background-color: #cccccc;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .exImg{
+      background-image: url("https://www.shutterstock.com/image-vector/programming-code-coding-hacker-background-260nw-1714491562.jpg");
+      background-color: #cccccc;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+
+    <nav
+      class="relative flex w-full flex-nowrap items-center justify-between bg-neutral-800 py-4 text-neutral-50	 shadow-lg hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start"
+      data-te-navbar-ref>
+      <div class="flex w-full flex-wrap items-center justify-between px-6">
+        <button
+          class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+          type="button" data-te-collapse-init data-te-target="#navbarSupportedContent3"
+          aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="[&>svg]:w-7">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+              <path fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </button>
+        <a class="sm:block md:hidden lg:hidden text-xl text-neutral-50 lg:ml-36 py-4 px-4 lg:py-0" href="#">Portfolio</a>
+        <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+          id="navbarSupportedContent3" data-te-collapse-item>
+          <a class="text-xl text-neutral-50 lg:ml-36 py-4 px-4 lg:py-0 hidden md:block" href="#">Portfolio</a>
+          <!-- Left links -->
+          <ul class="list-style-none ml-auto mr-20 flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
+            <li class="lg:px-2" data-te-nav-item-ref>
+              <a class="p-0 text-neutral-50 hover:text-neutral-400 focus:text-neutral-700 disabled:text-white/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 py-4 mx-4 lg:py-0 text-lg	"
+              onclick="home()"
+                href="#" data-te-nav-link-ref>Home</a>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="p-0 text-neutral-50 hover:text-neutral-400 focus:text-neutral-700 disabled:text-white/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 py-4 mx-4 lg:py-0 text-lg	"
+              href="#info" data-te-nav-link-ref
+              onclick="info()"
+                >Personal Info</a>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="p-0 text-neutral-50 hover:text-neutral-400 focus:text-neutral-700 disabled:text-white/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 py-4 mx-4 lg:py-0 text-lg	"
+                href="#edu  " data-te-nav-link-ref
+                onclick="edu()"
+                >Education</a>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="p-0 text-neutral-50 hover:text-neutral-400 focus:text-neutral-700 disabled:text-white/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 py-4 mx-4 lg:py-0 text-lg	"
+                href="#tp" data-te-nav-link-ref
+                onclick="tp()"
+                >Technical Project</a>
+            </li>
+            <li class="lg:pr-2" data-te-nav-item-ref>
+              <a class="p-0 text-neutral-50 hover:text-neutral-400 focus:text-neutral-700 disabled:text-white/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 py-4 mx-4 lg:py-0 text-lg	"
+                href="#exep" data-te-nav-link-ref
+                onclick="exep()"
+                >Experience</a>
+            </li>
+            
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+    </nav>
+
+  <div class=" w-full h-screen bg-zinc-600 img" id="home">
+    <h1 class="text-6xl font-extrabold	text-white	text-center	pt-72">I am <strong>Yukta Saraiya</strong></h1>
+    <p class="text-3xl font-bold antialiased text-white text-center	mt-5">Software Engineer Trainee</p>
+  </div>
+
+  <div class="hidden w-full h-auto md:h-screen bg-teal-600	piImg" id="info">
+    <h2 class="text-6xl font-extrabold text-black		 text-center	pt-40">Personal Information</h2>
+    <p class="text-3xl text-black	text-center mt-5 "><strong>Name:</strong> Yukta Saraiya</p>
+    <p class="text-3xl text-black	text-center mt-5"><strong>Mobile number:</strong> 9876543210</p>
+    <p class="text-3xl text-black	text-center mt-5"><strong>Email:</strong> yuktasaraiya@gmail.com</p>
+    <p class="text-3xl text-black	text-center	mt-5"><strong>Collage :</strong> Saffrony Institute of Technology</p>
+    <p class="text-3xl text-black	text-center	mt-5"><strong>City:</strong> Surat</p>
+    <p class="text-3xl text-black	text-center	mt-5"><strong>Pincode:</strong> 395004</p>
+    <p class="text-3xl text-black	text-center	mt-5 pb-5"><strong>Github:</strong> yukta22</p> 
+  </div>
+
+  <div class="hidden w-full h-auto md:h-screen bg-gray-500 edImg" id="edu">
+    <h2 class="text-6xl font-extrabold text-white	text-center	pt-40">Education </h2>
+      <ul>
+          <li class="text-3xl text-white	text-center	mt-10">
+              <dl><strong>Saffrony Institute of Technology </strong>| 2019-2023.</dl>
+                  <dd>B. E. | Information Technology</dd>
+                  <dd>CGPA: 9.48</dd>
+          </li>
+          <br>    
+          <li class="text-3xl text-white	text-center	mt-2 pb-5">
+              <dl><strong>P. P. Savani vidhyabhavan </strong> | 2017-2019</dl>
+                  <dd>class XII | Science</dd>
+                  <dd>Percentile: 79%</dd>
+          </li>
+      </ul> 
+  </div>
+
+  <div class="hidden w-full h-auto md:h-screen bg-gray-500 tpImg" id="tp">
+    <h2 class="text-6xl font-extrabold text-white	text-center	pt-40">Technical Project</h2>
+
+      <h3 class="text-3xl text-white font-bold	text-start px-7 lg:px-32	pt-8 underline decoration-1 ">User-Management-System | <a href="https://github.com/yukta22/User_Management_System">GITHUB</a> </h3>
+      <ul>
+          <li class="text-xl text-white	text-start px-7 lg:px-32	pt-2">This is web based application in which User's details has been maintain.</li>
+          <li class="text-xl text-white	text-start px-7 lg:px-32	pt-2">It is a CRUD application, which means that a user may create a new user, delete a user, read and edit it to maintain's the user Detail. All the information is saved in a database.</li>
+          <li class="text-xl text-white	text-start px-7 lg:px-32	pt-2"><strong>Tech-Stack:</strong> HTML, CSS, JavaScript, Bootstap, NodeJs, ExpressJs, MongoDb</li>
+      </ul>
+      <h3 class="text-3xl text-white font-bold	text-start px-7 lg:px-32	pt-8 underline decoration-1 ">Travel-Advisor App | <a href="https://github.com/yukta22/Travel_Advisor">GITHUB</a> </h3>
+      <ul>
+          <li class="text-xl text-white	text-start px-7 lg:px-32	pt-2">This app uses based on any Geolocation to provide information on nearby restaturant, hotels, and tourist attaractions as well as weather forecAdvisor app</li>
+          <li class="text-xl text-white	text-start px-7 lg:px-32	pt-2">This system is uses Google maps API, and Google Places API, and Wether map API is taken from the RapidAPI.</li>
+          <li class="text-xl text-white	text-start px-7 lg:px-32	pt-2"><strong>Tech-Stack:</strong> HTML, CSS, Bootstap, ReactJs</li>
+      </ul>
+      <h3 class="text-3xl text-white font-bold	text-start px-7 lg:px-32	pt-8 underline decoration-1 ">Typing Speed Test | <a href="https://github.com/yukta22/Typing-Speed-Test.github.io">GITHUB</a> </h3>
+      <ul>
+          <li class="text-xl text-white	text-start px-7 lg:px-32	pt-2">Taking a typing speed test establishes your average typing speed  and accuracy, which is an important baseline to know so you can increase speed and improve accuracy with practice. Periodically taking typing speed tests can help you track your progress and measure improvement.
+          </li>
+          <li class="text-xl text-white	text-start px-7 lg:px-32	pt-2 ">Users can improves their typing speed by practicing on this website. It's saves time and money as well as increase the productivity.</li>
+          <li class="text-xl text-white	text-start px-7 lg:px-32	pt-2 pb-5"><strong>Tech-Stack:</strong> HTML, CSS, Bootstap, JavaScript</li>
+
+      </ul>
+  </div>
+
+  <div class="hidden w-full h-auto md:h-screen font-extrabold bg-gray-500 exImg" id="exep">
+    <h2 class="text-6xl text-white	text-center	pt-40 ">Experience</h2>
+      
+      <p class="text-3xl text-white font-bold	text-center	mt-10"><strong>Infolabz </strong> | React Developer Intern</p>
+      <p class="text-xl text-white	text-start pl-8 pr-8 lg:pl-52 lg:pr-52	pt-5 pb-20">I designed dynamic website using the React Technology.I have also worked on the live ApIs to build real-time dynamic webpages. in order to fetch the live data, with the used of some concept of http and es6.</p>
+             
+
+  </div>
+
+  
+
+  <script>
+    function home() {
+        let home = document.getElementById("home");
+        home.style.display = "block"; 
+        let info = document.getElementById("info");
+        info.style.display = "none"; 
+        let edu = document.getElementById("edu");
+        edu.style.display = "none";  
+        let tp = document.getElementById("tp");
+        tp.style.display = "none";
+        let exep = document.getElementById("exep");
+        exep.style.display = "none";
+    }
+    function info() {
+        let home = document.getElementById("home");
+        home.style.display = "none"; 
+        let info = document.getElementById("info");
+        info.style.display = "block"; 
+        let edu = document.getElementById("edu");
+        edu.style.display = "none";  
+        let tp = document.getElementById("tp");
+        tp.style.display = "none";
+        let exep = document.getElementById("exep");
+        exep.style.display = "none";  
+        
+    }
+    function edu() {
+        let home = document.getElementById("home");
+        home.style.display = "none"; 
+        let info = document.getElementById("info");
+        info.style.display = "none";  
+        let edu = document.getElementById("edu");
+        edu.style.display = "block";
+        let tp = document.getElementById("tp");
+        tp.style.display = "none";
+        let exep = document.getElementById("exep");
+        exep.style.display = "none";  
+    }
+
+    function tp() {
+        let home = document.getElementById("home");
+        home.style.display = "none"; 
+        let info = document.getElementById("info");
+        info.style.display = "none";  
+        let edu = document.getElementById("edu");
+        edu.style.display = "none";
+        let tp = document.getElementById("tp");
+        tp.style.display = "block";
+        let exep = document.getElementById("exep");
+        exep.style.display = "none";  
+    }
+
+    function exep() {
+        let home = document.getElementById("home");
+        home.style.display = "none"; 
+        let info = document.getElementById("info");
+        info.style.display = "none";  
+        let edu = document.getElementById("edu");
+        edu.style.display = "none";
+        let tp = document.getElementById("tp");
+        tp.style.display = "none";
+        let exep = document.getElementById("exep");
+        exep.style.display = "block";
+    }
+    
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>
