@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
+  <link rel="stylesheet" href="./output.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <script src="https://cdn.tailwindcss.com/3.2.4"></script>
@@ -24,45 +24,35 @@
 
   <style>
     .img{
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThRnEqtOUjlTXj-9e_DB-NW4xO57e5qkwTag&usqp=CAU");
-      background-color: #cccccc;
-      height: 500px;
+      background-color:aquamarine;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
     }
     .piImg{
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdowvfopTPdH7TPIVkE9XriiGOXPyxultumiSMCbctfIO6Ifc9YwMyrkWwCBJHpvmLLKA&usqp=CAU");
-      background-color: #cccccc;
-      height: 500px;
+      background-color:aquamarine;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
     }
     .edImg{
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCd5zNSfuI189Eghdfq-1NTfQ1GDQd7WFacg&usqp=CAU");
-      background-color: #cccccc;
-      height: 500px;
+      background-color:aquamarine;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
     }
-    .tpImg{
-      background-image: url("https://dynamics.folio3.com/blog/wp-content/uploads/2022/08/IT-Project-Management_-Steps-Methodologies-Examples-_-Best-IT-Project-Management-Service-consultants-1280x720.png");
-      background-color: #cccccc;
-      height: 500px;
+    .psImg{
+      background-color:aquamarine;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
     }
     .exImg{
-      background-image: url("https://www.shutterstock.com/image-vector/programming-code-coding-hacker-background-260nw-1714491562.jpg");
-      background-color: #cccccc;
-      height: 500px;
+      background-color:aquamarine;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -95,7 +85,7 @@
         <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
           id="navbarSupportedContent3" data-te-collapse-item>
           <a class="text-xl text-neutral-50 lg:ml-36 py-4 px-4 lg:py-0 hidden md:block" href="#">Portfolio</a>
-          <!-- Left links -->
+          
           <ul class="list-style-none ml-auto mr-20 flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
             <li class="lg:px-2" data-te-nav-item-ref>
               <a class="p-0 text-neutral-50 hover:text-neutral-400 focus:text-neutral-700 disabled:text-white/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 py-4 mx-4 lg:py-0 text-lg	"
@@ -110,14 +100,14 @@
             </li>
             <li class="lg:pr-2" data-te-nav-item-ref>
               <a class="p-0 text-neutral-50 hover:text-neutral-400 focus:text-neutral-700 disabled:text-white/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 py-4 mx-4 lg:py-0 text-lg	"
-                href="#edu  " data-te-nav-link-ref
+                href="#edu" data-te-nav-link-ref
                 onclick="edu()"
                 >Education</a>
             </li>
             <li class="lg:pr-2" data-te-nav-item-ref>
               <a class="p-0 text-neutral-50 hover:text-neutral-400 focus:text-neutral-700 disabled:text-white/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 py-4 mx-4 lg:py-0 text-lg	"
-                href="#tp" data-te-nav-link-ref
-                onclick="tp()"
+                href="#ps" data-te-nav-link-ref
+                onclick="ps()"
                 >Professional Skills</a>
             </li>
             <li class="lg:pr-2" data-te-nav-item-ref>
@@ -128,19 +118,18 @@
             </li>
             
           </ul>
-          <!-- Left links -->
+      
         </div>
-        <!-- Collapsible wrapper -->
       </div>
     </nav>
 
-  <div class=" w-full h-screen bg-zinc-600 img" id="home">
-    <h1 class="text-6xl font-extrabold	text-white	text-center	pt-72">I am <strong>Tamanna Parmar</strong></h1>
-    <p class="text-3xl font-bold antialiased text-white text-center	mt-5">Software Engineer Trainee</p>
+  <div class=" w-full h-screen img" id="home">
+    <h1 class="text-6xl font-extrabold	text-black	text-center	pt-72">I am <strong>Tamanna Parmar</strong></h1>
+    <p class="text-3xl font-bold antialiased text-black text-center	mt-5">Software Engineer Trainee</p>
   </div>
 
-  <div class="hidden w-full h-auto md:h-screen bg-teal-600	piImg" id="info">
-    <h2 class="text-6xl font-extrabold text-black		 text-center	pt-40">Personal Information</h2>
+  <div class="hidden w-full h-auto md:h-screen 	piImg" id="info">
+    <h2 class="text-6xl font-extrabold text-black	text-center	pt-40">Personal Information</h2>
     <p class="text-3xl text-black	text-center mt-5 "><strong>Name:</strong>Tamanna Parmar</p>
     <p class="text-3xl text-black	text-center mt-5"><strong>Mobile number:</strong>8758618968</p>
     <p class="text-3xl text-black	text-center mt-5"><strong>Email:</strong>tannu22parmar@gmail.com</p>
@@ -150,16 +139,16 @@
     <p class="text-3xl text-black	text-center	mt-5 pb-5"><strong>Linkedin:</strong>Tamanna Parmar</p>
   </div>
 
-  <div class="hidden w-full h-auto md:h-screen bg-gray-500 edImg" id="edu">
-    <h2 class="text-6xl font-extrabold text-white	text-center	pt-40">Education </h2>
+  <div class="hidden w-full h-auto md:h-screen  edImg" id="edu">
+    <h2 class="text-6xl font-extrabold text-black	text-center	pt-40">Education </h2>
       <ul>
-          <li class="text-3xl text-white	text-center	mt-10">
+          <li class="text-3xl text-black	text-center	mt-10">
               <dl><strong>Silver Oak Institute of Technology </strong>| 2019-2022.</dl>
                   <dd>B. E. | Computer Engineer</dd>
                   <dd>CGPA: 8.50</dd>
           </li>
           <br>    
-          <li class="text-3xl text-white	text-center	mt-2 pb-5">
+          <li class="text-3xl text-black	text-center	mt-2 pb-5">
               <dl><strong>Dalia Institute Of Diploma Studies </strong> | 2017-2019</dl>
                   <dd>Diploma | Computer Engineer</dd>
                   <dd>CGPA: 8.21</dd>
@@ -167,24 +156,24 @@
       </ul> 
   </div>
 
-  <div class="hidden w-full h-auto md:h-screen bg-gray-500 tpImg" id="tp">
-    <h2 class="text-6xl font-extrabold text-white	text-center	pt-40">Professional Skills</h2>
+  <div class="hidden w-full h-auto md:h-screen psImg" id="ps">
+    <h2 class="text-6xl font-extrabold text-black	text-center	pt-40">Professional Skills</h2>
       <ul>
-          <li class="text-xl text-white	text-center px-7 lg:px-32	pt-2">Creative Skills -<u>Figma, Adobe tools, Canva etc.</u></li>
-          <li class="text-xl text-white	text-center px-7 lg:px-32	pt-2">Framework &Library skills -<u>React, Node/Express &Next</u></u></li>
-          <li class="text-xl text-white	text-center px-7 lg:px-32	pt-2">DB Skills -<u>SQL(Workbench), NoSQL(MongoDB/Mongoose) & GraphOL</u></u></li>
-          <li class="text-xl text-white	text-center px-7 lg:px-32	pt-2">Version Control Skills -<u>Git, GitHub & GitLab</u></u></li>
-          <li class="text-xl text-white	text-center px-7 lg:px-32	pt-2">Good Data Structure & Algorithm skills</li>
-          <li class="text-xl text-white	text-center px-7 lg:px-32	pt-2">Good Communication skills</li>
-          <li class="text-xl text-white	text-center px-7 lg:px-32	pt-2">Leadership</li>
-          <li class="text-xl text-white	text-center px-7 lg:px-32	pt-2">Public Relations</li>
-          <li class="text-xl text-white	text-center px-7 lg:px-32	pt-2">Problem Solving</li>
+          <li class="text-xl text-black	text-center px-7 lg:px-32	pt-2">Creative Skills -<u>Figma, Adobe tools, Canva etc.</u></li>
+          <li class="text-xl text-black	text-center px-7 lg:px-32	pt-2">Framework &Library skills -<u>React, Node/Express &Next</u></u></li>
+          <li class="text-xl text-black	text-center px-7 lg:px-32	pt-2">DB Skills -<u>SQL(Workbench), NoSQL(MongoDB/Mongoose) & GraphOL</u></u></li>
+          <li class="text-xl text-black	text-center px-7 lg:px-32	pt-2">Version Control Skills -<u>Git, GitHub & GitLab</u></u></li>
+          <li class="text-xl text-black	text-center px-7 lg:px-32	pt-2">Good Data Structure & Algorithm skills</li>
+          <li class="text-xl text-black	text-center px-7 lg:px-32	pt-2">Good Communication skills</li>
+          <li class="text-xl text-black	text-center px-7 lg:px-32	pt-2">Leadership</li>
+          <li class="text-xl text-black	text-center px-7 lg:px-32	pt-2">Public Relations</li>
+          <li class="text-xl text-black	text-center px-7 lg:px-32	pt-2">Problem Solving</li>
           
   </div>
 
-  <div class="hidden w-full h-auto md:h-screen font-extrabold bg-gray-500 exImg" id="exep">
-    <h2 class="text-6xl text-white	text-center	pt-40 ">Objectives</h2>
-      <p class="text-xl text-white	text-start pl-8 pr-8 lg:pl-52 lg:pr-52	pt-5 pb-20">I want to succeed in stimulating and challenging environment,building the success of the company while I
+  <div class="hidden w-full h-auto md:h-screen font-extrabold exImg" id="exep">
+    <h2 class="text-6xl text-black	text-center	pt-40 ">Objectives</h2>
+      <p class="text-xl text-black	text-start pl-8 pr-8 lg:pl-52 lg:pr-52	pt-5 pb-20">I want to succeed in stimulating and challenging environment,building the success of the company while I
         experience advancement opportunities.</p>
              
 
@@ -200,8 +189,8 @@
         info.style.display = "none"; 
         let edu = document.getElementById("edu");
         edu.style.display = "none";  
-        let tp = document.getElementById("tp");
-        tp.style.display = "none";
+        let ps = document.getElementById("ps");
+        ps.style.display = "none";
         let exep = document.getElementById("exep");
         exep.style.display = "none";
     }
@@ -212,8 +201,8 @@
         info.style.display = "block"; 
         let edu = document.getElementById("edu");
         edu.style.display = "none";  
-        let tp = document.getElementById("tp");
-        tp.style.display = "none";
+        let ps = document.getElementById("ps");
+        ps.style.display = "none";
         let exep = document.getElementById("exep");
         exep.style.display = "none";  
         
@@ -225,21 +214,21 @@
         info.style.display = "none";  
         let edu = document.getElementById("edu");
         edu.style.display = "block";
-        let tp = document.getElementById("tp");
-        tp.style.display = "none";
+        let ps = document.getElementById("ps");
+        ps.style.display = "none";
         let exep = document.getElementById("exep");
         exep.style.display = "none";  
     }
 
-    function tp() {
+    function ps() {
         let home = document.getElementById("home");
         home.style.display = "none"; 
         let info = document.getElementById("info");
         info.style.display = "none";  
         let edu = document.getElementById("edu");
         edu.style.display = "none";
-        let tp = document.getElementById("tp");
-        tp.style.display = "block";
+        let ps = document.getElementById("ps");
+        ps.style.display = "block";
         let exep = document.getElementById("exep");
         exep.style.display = "none";  
     }
@@ -251,8 +240,8 @@
         info.style.display = "none";  
         let edu = document.getElementById("edu");
         edu.style.display = "none";
-        let tp = document.getElementById("tp");
-        tp.style.display = "none";
+        let ps = document.getElementById("ps");
+        ps.style.display = "none";
         let exep = document.getElementById("exep");
         exep.style.display = "block";
     }

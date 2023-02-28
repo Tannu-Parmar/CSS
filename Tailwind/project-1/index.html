@@ -5,6 +5,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+  rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com/3.2.4"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
+        mono: ["ui-monospace", "monospace"],
+      },
+    },
+    corePlugins: {
+      preflight: false,
+    },
+  };
+</script>
   <link rel="stylesheet" href="./output.css">
   <title>Project</title>
 </head>
@@ -69,21 +91,32 @@
                     aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>1st Full Post</a>
+                        href="#" data-te-dropdown-item-ref>1st Full Post+2 cols Grid</a>
                     </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>1st Full Post</a>
+                        href="#" data-te-dropdown-item-ref>1st Full Post+list</a>
                     </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                         href="#" data-te-dropdown-item-ref>2cols grid layout</a>
                     </li>
-                    <hr
-                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                        href="#" data-te-dropdown-item-ref>List Layout</a>
+                    </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>3cols grid layout</a>
+                    </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
+                    <li>
+                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        href="#" data-te-dropdown-item-ref>Standard Blog Layout</a>
                     </li>
                   </ul>
                 </div>
@@ -110,21 +143,17 @@
                     aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Action</a>
+                        href="#" data-te-dropdown-item-ref>Header</a>
                     </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Another action</a>
+                        href="#" data-te-dropdown-item-ref>Slider</a>
                     </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Something else here</a>
-                    </li>
-                    <hr
-                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
-                    <li>
-                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                        href="#" data-te-dropdown-item-ref>Sidebar</a>
                     </li>
                   </ul>
                 </div>
@@ -151,21 +180,17 @@
                     aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Action</a>
+                        href="#" data-te-dropdown-item-ref>Lifestyle</a>
                     </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Another action</a>
+                        href="#" data-te-dropdown-item-ref>Travel</a>
                     </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Something else here</a>
-                    </li>
-                    <hr
-                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
-                    <li>
-                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                        href="#" data-te-dropdown-item-ref>Photo</a>
                     </li>
                   </ul>
                 </div>
@@ -200,21 +225,17 @@
                     aria-labelledby="dropdownMenuButton1d" data-te-dropdown-menu-ref>
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Action</a>
+                        href="#" data-te-dropdown-item-ref>Cart</a>
                     </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Another action</a>
+                        href="#" data-te-dropdown-item-ref>Checkout</a>
                     </li>
+                    <hr class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
                     <li>
                       <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Something else here</a>
-                    </li>
-                    <hr
-                      class="my-2 h-0 border border-t-0 border-solid border-neutral-700 opacity-25 dark:border-neutral-200" />
-                    <li>
-                      <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#" data-te-dropdown-item-ref>Separated link</a>
+                        href="#" data-te-dropdown-item-ref>My Account</a>
                     </li>
                   </ul>
                 </div>
@@ -284,7 +305,7 @@
         facilis quod cumque obcaecati quam officia corporis, odit illum voluptates veritatis excepturi.</p>
       <div class="flex justify-center">
         <button type="button"
-          class="inline-block w-80 mt-8 text-xl tracking-wider justify-center border-2 border-slate-200 px-6 pt-2 pb-[6px] font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-third hover:bg-opacity-10 focus:border-primary-accent-100 focus:outline-none focus:ring-0 active:border-primary-accent-200 dark:text-primary-100 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+          class="inline-block w-80 mt-8 text-xl tracking-wider justify-center border-2 border-slate-200 px-6 pt-2 pb-[6px] font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-btnColor hover:text-white"
           data-te-ripple-init>
           READ THE WHOLE STORY
         </button>
@@ -327,17 +348,17 @@
         </div>
       </div>
 
-      <div class="pt-44 flex-col justify-center">
+      <div class=" pt-44 flex-col justify-center">
         <p class="text-center text-[30px]">The Portfolio</p>
-        <h1 class="text-center">View</h1>
+        <h1 class="text-center">View recent work</h1>
         <div class="flex justify-center space-x-2 py-10">
-          <button
-            type="button"
-            class="inline-block rounded bg-white px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black text-[17px] transition duration-15 ease-in-out hover:bg-yellow-500  shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
-            Button
+            <button
+              type="button"
+              class="inline-block W-fit mt-8 text-xl trackin-wider justify-center border-2 border-slate-200 px-6 pt-2 pb-[6px] font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-btnColor hover:text-white ">
+              Explore
             </button>
         </div>
-      </div>
+    </div>
       <div class="pr-36">
         <div class="relative p-20 group">
           <img src="./image/8.png" alt="img" class="w-[450px] h-[300px]">
@@ -353,6 +374,581 @@
     </div>
   </section>
 
+  <section class="ml-0 p-10 bg-[#E7F2ED]">
+    <div class="container mx-auto">
+      <div class="flex flex-row">
+        <div class="w-2/5 flex flex-col justify-center p-20">
+          <p class="text-5xl leading-loose my-auto">Tools For Creatives</p>
+          <p class="my-auto leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nihil praesentium corrupti odio cum maiores voluptates quidem beatae recusandae saepe sunt, illo nisi possimus suscipit qui, quasi expedita et ducimus?</p>
+          <button type="button" class="inline-block W-fit mt-8 text-xl trackin-wider justify-center border-2 border-slate-200 px-6 pt-2 pb-[6px] font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-btnColor hover:text-white">
+            GO TO THE BLOG
+          </button>
+        </div>
+        <div class=" pl-8 flex justify-end">
+          <div class="mt-8 ml-0 flex flex-row gap-12 justify-start">
+            <img src="./image/10.png" class="" alt="img" width="338" height="505">
+            <img src="./image/11.png" alt="img" width="338" height="505">
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+  <div class="lg:px-28 px-5 lg:py-12 py-7">
+    <section class="text-neutral-700 dark:text-neutral-300">
+      <div class="grid gap-6 text-center md:grid-cols-3">
+        <div>
+          <div>
+            <div class="pb-20 lg:px-14 px-5 border-2 rounded-2 border-[#D0D0A7] hover:bg-[#E7F2ED]">
+              <p class="mt-4">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet amet iste pariatur sapiente, maxime id nam accusamus, voluptatem fugit voluptatum sed cum voluptates, quia obcaecati in? Eum, repudiandae error! Illo."</p>
+            </div>
+            <div class="mx-auto -mt-12 w-24 mb-2 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              <img src="./image/12.png" alt="img">
+            </div>
+            <h1>CLIENT NAME HERE</h1>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <div class="pb-20 lg:px-14 px-5 border-2 rounded-2 border-[#D0D0A7] hover:bg-[#E7F2ED]">
+              <p class="mt-4">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet amet iste pariatur sapiente, maxime id nam accusamus, voluptatem fugit voluptatum sed cum voluptates, quia obcaecati in? Eum, repudiandae error! Illo."</p>
+            </div>
+            <div class="mx-auto -mt-12 w-24 mb-2 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              <img src="./image/13.png" alt="img">
+            </div>
+            <h1>CLIENT NAME HERE</h1>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <div class="pb-20 lg:px-14 px-5 border-2 rounded-2 border-[#D0D0A7] hover:bg-[#E7F2ED]">
+              <p class="mt-4">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet amet iste pariatur sapiente, maxime id nam accusamus, voluptatem fugit voluptatum sed cum voluptates, quia obcaecati in? Eum, repudiandae error! Illo."</p>
+            </div>
+            <div class="mx-auto -mt-12 w-24 mb-2 overflow-hidden rounded-full border-2 border-[#D0D0A7] bg-white dark:border-neutral-800 dark:bg-neutral-800">
+              <img src="./image/14.png" alt="img">
+            </div>
+            <h1>CLIENT NAME HERE</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+ 
+  <section class="ml-0 p-10 bg-[#E7F2ED]">
+    <div class="container mx-auto">
+      <div id="carouselExampleSlidesOnly" class="relative" data-te-carousel-init data-te-carousel-slide>
+        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+          <div
+            class="relative float-left -mr-[100%] w-full transition-transform duration-[100ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item data-te-carousel-active>
+            <img src="./image/16.png" class="block w-full" alt="img" />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[100ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item>
+            <img src="./image/16.png" class="block w-full" alt="img" />
+          </div>
+          <div
+            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[100ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-item>
+            <img src="./image/16.png" class="block w-full" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="py-10 lg:pl-44">
+      <ul
+      class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0"
+      role="tablist"
+      data-te-nav-ref>
+      <li role="presentation">
+        <a
+          href="#tabs-home"
+          class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400 text-2xl"
+          data-te-toggle="pill"
+          data-te-target="#tabs-home"
+          data-te-nav-active
+          role="tab"
+          aria-controls="tabs-home"
+          aria-selected="true"
+          >Lifestyle</a
+        >
+      </li>
+      <li role="presentation">
+        <a
+          href="#tabs-profile"
+          class="focus:border-transparen my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400 text-2xl"
+          data-te-toggle="pill"
+          data-te-target="#tabs-profile"
+          role="tab"
+          aria-controls="tabs-profile"
+          aria-selected="false"
+          >Travel</a
+        >
+      </li>
+      <li role="presentation">
+        <a
+          href="#tabs-messages"
+          class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400 text-2xl"
+          data-te-toggle="pill"
+          data-te-target="#tabs-messages"
+          role="tab"
+          aria-controls="tabs-messages"
+          aria-selected="false"
+          >Photos</a
+        >
+      </li>
+      
+    </ul>
+    <div class="mb-6">
+      <div
+        class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block border-2 border-lime-200 mx-2 lg:ml-10 lg:mr-48 my-10 p-10  group-hover:block"
+        id="tabs-home"
+        role="tabpanel"
+        aria-labelledby="tabs-home-tab"
+        data-te-tab-active>
+        <em class="text-6xl">L</em>orem ipsum dolor sit amet consectetur adipisicing elit. Quos laboriosam consequatur, natus facere dignissimos minima animi porro repudiandae blanditiis tenetur, quod quasi mollitia sequi illum expedita quaerat adipisci quis explicabo.
+      </div>
+      <div
+        class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block border-2 border-lime-200 mx-2 lg:ml-10 lg:mr-48 my-10 p-10  group-hover:block"
+        id="tabs-profile"
+        role="tabpanel"
+        aria-labelledby="tabs-profile-tab">
+        <em class="text-6xl">L</em>orem ipsum dolor sit amet consectetur adipisicing elit. Odit, provident aut eum ipsa labore necessitatibus nesciunt a. Labore libero repellendus sapiente consequatur explicabo quod perferendis voluptatum earum maiores! Minus, atque.
+      </div>
+      <div
+        class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block border-2 border-lime-200 mx-2 lg:ml-10 lg:mr-48 my-10 p-10 group-hover:block"
+        id="tabs-messages"
+        role="tabpanel"
+        aria-labelledby="tabs-profile-tab">
+        <em class="text-6xl">L</em>orem ipsum dolor sit amet consectetur adipisicing elit. At tenetur corporis necessitatibus nesciunt quibusdam quod ipsam aut. Dolor veritatis commodi, suscipit ad sunt laudantium labore consectetur vitae ullam ducimus repellat.
+      </div>
+      
+    </div>
+    
+    </div>
+  </section>
+
+  <section class="ml-0 p-10 bg-[#E7F2ED]">
+    <div class="container mx-auto">
+      <p class="text-5xl flex justify-center">Lets Collaborate Together</p>
+      <div class="grid grid-cols-4 gap-20 mt-12">
+        <p class="grid grid-cols-1 text-lg leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugiat doloremque maxime ad quae neque molestias
+          blanditiis saepe veniam doloribus quisquam cumque voluptas dicta accusamus consectetur iure voluptatibus
+          veritatis, amet culpa tempora. Quisquam harum iusto cum voluptatem, magni asperiores voluptas aut dicta
+          architecto laborum!</p>
+        <p class="grid grid-cols-1 text-lg leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugiat doloremque maxime ad quae neque molestias
+          blanditiis saepe veniam doloribus quisquam cumque voluptas dicta accusamus consectetur iure voluptatibus
+          veritatis, amet culpa tempora. Quisquam harum iusto cum voluptatem, magni asperiores voluptas aut dicta
+          architecto laborum!</p>
+        <p class="grid grid-cols-1 text-lg leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugiat doloremque maxime ad quae neque molestias
+          blanditiis saepe veniam doloribus quisquam cumque voluptas dicta accusamus consectetur iure voluptatibus
+          veritatis, amet culpa tempora. Quisquam harum iusto cum voluptatem, magni asperiores voluptas aut dicta
+          architecto laborum!</p>
+        <p class="grid grid-cols-1 text-lg leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugiat doloremque maxime ad quae neque molestias
+          blanditiis saepe veniam doloribus quisquam cumque voluptas dicta accusamus consectetur iure voluptatibus
+          veritatis, amet culpa tempora. Quisquam harum iusto cum voluptatem, magni asperiores voluptas aut dicta
+          architecto laborum!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ml-0 p-10">
+    <div class="container mx-auto">
+      <p class="flex justify-center text-6xl">Recent Posts</p>
+      <div class="grid grid-cols-3 mt-10 gap-y-10">
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+            <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+              <img class="rounded-t-lg" src="image/17.png" alt="img" />
+            </a>
+            <div class="p-6 hover:bg-[#E7F2ED] border border-[#D0D0A7]">
+              <h6 class="mb-2 mt-1 text-base text-center">PHOTO</h6>
+              <h5 class="mb-2 text-xl font-medium leading-tight text-center text-neutral-800 dark:text-neutral-50">
+                Little Known Ways To Rid YourSelf
+              </h5>
+              <h6 class="mb-2 mt-2 text-base text-center">June 20 2023</h6>
+              <hr>
+              <p class="mb-4 mt-4 text-base text-center text-neutral-600 dark:text-neutral-200">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content build on the card title and make up the.
+              </p>
+              <button type="button"
+                class="rounded flex mx-auto border border-[#D0D0A7] bg-transparent px-6 pt-2.5 pb-2 text-black text-xs font-medium uppercase leading-normal  hover:bg-[#D0D0A7]"
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+            <div class="p-6 hover:bg-[#E7F2ED] border border-[#D0D0A7]">
+              <h6 class="mb-2 mt-1 text-base text-center">PHOTO</h6>
+              <h5 class="mb-2 text-xl font-medium leading-tight text-center text-neutral-800 dark:text-neutral-50">
+                Little Known Ways To Rid YourSelf
+              </h5>
+              <h6 class="mb-2 mt-2 text-base text-center">June 20 2023</h6>
+              <hr>
+              <p class="mb-4 mt-4 text-base text-center text-neutral-600 dark:text-neutral-200">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content build on the card title and make up the.
+              </p>
+              <button type="button"
+                class="rounded flex mx-auto border border-[#D0D0A7] bg-transparent px-6 pt-2.5 pb-2 text-black text-xs font-medium uppercase leading-normal  hover:bg-[#D0D0A7]"
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+            <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+              <img class="rounded-t-lg" src="image/17.png" alt="img" />
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+            <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+              <img class="rounded-t-lg" src="./image/17.png" alt="img" />
+            </a>
+            <div class="p-6 hover:bg-[#E7F2ED] border border-[#D0D0A7]">
+              <h6 class="mb-2 mt-1 text-base text-center">PHOTO</h6>
+              <h5 class="mb-2 text-xl font-medium leading-tight text-center text-neutral-800 dark:text-neutral-50">
+                Little Known Ways To Rid YourSelf
+              </h5>
+              <h6 class="mb-2 mt-2 text-base text-center">June 20 2023</h6>
+              <hr>
+              <p class="mb-4 mt-4 text-base text-center text-neutral-600 dark:text-neutral-200">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content build on the card title and make up the.
+              </p>
+              <button type="button"
+                class="rounded flex mx-auto border border-[#D0D0A7] bg-transparent px-6 pt-2.5 pb-2 text-black text-xs font-medium uppercase leading-normal  hover:bg-[#D0D0A7]"
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+            <div class="p-6 hover:bg-[#E7F2ED] border border-[#D0D0A7]">
+              <h6 class="mb-2 mt-1 text-base text-center">PHOTO</h6>
+              <h5 class="mb-2 text-xl font-medium leading-tight text-center text-neutral-800 dark:text-neutral-50">
+                Little Known Ways To Rid YourSelf
+              </h5>
+              <h6 class="mb-0 mt-2 text-base text-center">June 20 2023</h6>
+            </div>
+            <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+              <img class="rounded-t-lg" src="./image/17.png" alt="img" />
+            </a>
+            <div class="p-6 hover:bg-[#E7F2ED] border border-[#D0D0A7]">
+              <p class="mb-4 mt-4 text-base text-center text-neutral-600 dark:text-neutral-200">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content build on the card title and make up the.
+              </p>
+              <button type="button"
+                class="rounded flex mx-auto border border-[#D0D0A7] bg-transparent px-6 pt-2.5 pb-2 text-black text-xs font-medium uppercase leading-normal  hover:bg-[#D0D0A7]"
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+            <div class="p-6 hover:bg-[#E7F2ED] border border-[#D0D0A7]">
+              <h6 class="mb-2 mt-1 text-base text-center">PHOTO</h6>
+              <h5 class="mb-2 text-xl font-medium leading-tight text-center text-neutral-800 dark:text-neutral-50">
+                Little Known Ways To Rid YourSelf
+              </h5>
+              <h6 class="mb-0 mt-2 text-base text-center">June 20 2023</h6>
+            </div>
+            <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+              <img class="rounded-t-lg" src="./image/17.png" alt="img" />
+            </a>
+            <div class="p-6 hover:bg-[#E7F2ED] border border-[#D0D0A7]">
+              <p class="mb-4 mt-4 text-base text-center text-neutral-600 dark:text-neutral-200">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content build on the card title and make up the.
+              </p>
+              <button type="button"
+                class="rounded flex mx-auto border border-[#D0D0A7] bg-transparent px-6 pt-2.5 pb-2 text-black text-xs font-medium uppercase leading-normal  hover:bg-[#D0D0A7]"
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+            <div class="p-6 hover:bg-[#E7F2ED] border border-[#D0D0A7]">
+              <h6 class="mb-2 mt-1 text-base text-center">PHOTO</h6>
+              <h5 class="mb-2 text-xl font-medium leading-tight text-center text-neutral-800 dark:text-neutral-50">
+                Little Known Ways To Rid YourSelf
+              </h5>
+              <h6 class="mb-0 mt-2 text-base text-center">June 20 2023</h6>
+            </div>
+            <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+              <img class="rounded-t-lg" src="./image/17.png" alt="img" />
+            </a>
+            <div class="p-6 hover:bg-[#E7F2ED] border border-[#D0D0A7]">
+              <p class="mb-4 mt-4 text-base text-center text-neutral-600 dark:text-neutral-200">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content build on the card title and make up the.
+              </p>
+              <button type="button"
+                class="rounded flex mx-auto border border-[#D0D0A7] bg-transparent px-6 pt-2.5 pb-2 text-black text-xs font-medium uppercase leading-normal  hover:bg-[#D0D0A7]"
+                data-te-ripple-init data-te-ripple-color="light">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button"
+        class="rounded flex text-xl tracking-widest mt-8 mx-auto border border-[#D0D0A7] bg-transparent px-6 pt-2.5 pb-2 text-black font-medium uppercase leading-normal  hover:bg-[#D0D0A7]"
+        data-te-ripple-init data-te-ripple-color="light">
+        VIEW MORE POSTS
+      </button>
+    </div>
+  </section>
+
+  <section class="ml-0 p-10 bg-[#E7F2ED]">
+    <div class="container mx-auto">
+      <p class="flex justify-center text-6xl">Contact Us</p>
+      <div class="grid grid-cols-2 gap-x-16">
+        <form action="" class="mt-10 grid grid-cols-1">
+          <input type="text" placeholder="First Name"
+            class="mb-5 bg-transparent border border-[#04282D] p-4 placeholder:text-lg placeholder:text-[#04282D]">
+          <input type="text" placeholder="Last Name"
+            class="mb-5 bg-transparent border border-[#04282D] p-4 placeholder:text-lg placeholder:text-[#04282D]">
+          <input type="text" placeholder="Email"
+            class="mb-5 bg-transparent border border-[#04282D] p-4 placeholder:text-lg placeholder:text-[#04282D]">
+          <label for="comments" class="text-lg text-[#04282D]">Comments</label>
+          <textarea name="comments" id="comments" class="mb-5 bg-transparent border border-[#04282D]" cols="50"
+            rows="6"></textarea>
+          <button type="button"
+            class="rounded flex text-xl text-[#04282D] w-fit tracking-widest border border-[#04282D] bg-transparent px-6 pt-2.5 pb-2 font-medium uppercase leading-normal"
+            data-te-ripple-init data-te-ripple-color="light">
+            SUBMIT
+          </button>
+        </form>
+        <div class="mt-10 grid grid-cols-1">
+          <div class="flex flex-col">
+            <label for="" class="text-lg mb-5">Upload File</label>
+            <div class="bg-transparent border-2 border-dashed border-opacity-60  border-[#04282D] w-full h-3/4">
+              <p class="flex justify-center text-7xl text-blue-300">&#9729;</p>
+              <p class="flex justify-center text-[#04282D] text-xl">Drop Your Files Here</p>
+              <p class="text-[#04282D] text-base flex justify-center">or</p>
+              <div class="flex justify-center">
+                <button type="button"
+                  class="inline-block rounded text-xs text-[#04282D] w-fit border border-[#04282D] bg-transparent px-3 pt-1.5 pb-1 font-medium leading-normal"
+                  data-te-ripple-init data-te-ripple-color="light">
+                  Browse File
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="py-20 px-10 lg:px-96" >
+      <h1 class="text-center mb-8 text-5xl text-[#04282D]">FAQ</h1>
+      <div id="accordionExample">
+          <div
+            class="border border-[#0B8497] bg-white dark:border-neutral-600 dark:bg-neutral-800">
+            <h2 class="mb-0" id="headingOne">
+              <button
+                class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                type="button"
+                data-te-collapse-init
+                data-te-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne">
+                Lorem ipsum dolor sit amet
+                <span
+                  class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="!visible"
+              data-te-collapse-item
+              data-te-collapse-show
+              aria-labelledby="headingOne"
+              data-te-parent="#accordionExample">
+              <div class="py-4 px-5">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that just
+                about any HTML can go within the <code>.accordion-body</code>,
+                though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-t-0 border-[#0B8497] bg-white dark:border-neutral-600 dark:bg-neutral-800">
+            <h2 class="mb-0" id="headingTwo">
+              <button
+                class="group relative flex w-full items-center rounded-none border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo">
+                Lorem ipsum dolor sit amet
+                <span
+                  class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingTwo"
+              data-te-parent="#accordionExample">
+              <div class="py-4 px-5">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that just
+                about any HTML can go within the <code>.accordion-body</code>,
+                though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div
+            class=" border border-t-0 border-[#0B8497] bg-white dark:border-neutral-600 dark:bg-neutral-800">
+            <h2 class="accordion-header mb-0" id="headingThree">
+              <button
+                class="group relative flex w-full items-center border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree">
+                Lorem ipsum dolor sit amets
+                <span
+                  class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingThree"
+              data-te-parent="#accordionExample">
+              <div class="py-4 px-5">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that just
+                about any HTML can go within the <code>.accordion-body</code>,
+                though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+
+  <footer>
+    <footer class="ml-0 p-10">
+      <div class="container mx-auto flex flex-row justify-between">
+        <div class="flex flex-row">
+          <em class="text-2xl">&#169;</em>
+          <p class="text-xl ml-2">2022 Haus Gitschberg</p>
+          <p class="text-xl ml-2">|</p>
+          <p class="text-xl ml-2">Terms & Conditions</p>
+          <p class="text-xl ml-2">|</p>
+          <p class="text-xl ml-2">Privacy Policy</p>
+        </div>
+        <div class="flex flex-row">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-5 h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-5 h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-5 h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-5 h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+              fill-rule="evenodd" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-5 h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
