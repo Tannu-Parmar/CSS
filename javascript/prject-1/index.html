@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <label for="cars">Choose a State:</label>
+    <select name="state" id="state" onchange="state()">
+      <option value="state" disabled selected>State</option>
+      <option value="Gujarat" id="s1">Gujarat</option>
+      <option value="Maharastra" id="s2">Maharastra</option>  
+    </select>
+    <label for="cars">Choose a City:</label>
+    <select name="val1" id="city"></select>
+
+    <script>
+      city = {"Gujarat" : ["Ahmedabad","Baroda","Surat","Rajkot","Jamnagar","Anand","Junagad","Kutch"],
+              "Maharastra" : ["Thane","Nashik","Kolhlapur","Chandrapur","Khandala", "Aurangabad","Jalgaon"] };
+              console.log(city[0]);
+
+              function state(){
+                let s = document.getElementById("state").value;
+                let s1 = document.getElementById("s1").value;
+                let s2 = document.getElementById("s2").value;
+                console.log(s, s1, s2);
+
+                let c = document.getElementById("city");
+                if(s == s1){
+                  while (c.hasChildNodes()){
+                    c.removeChild(c.firstChild);
+                  }
+                  for(var i=0; i<city[s].length; i++){
+                    var x = document.createElement('option');
+                    x.innerHTML=city[s][i];
+                    c.appendChild(x);
+                  }
+                }
+                if(s == s2){
+                  while(c.hasChildNodes()){
+                    c.removeChild(c.firstChild);
+                  }
+                  for(var i=0; i<city[s].length; i++){
+                    var x = document.createElement('option');
+                    x.innerHTML = city[s][i];
+                    c.appendChild(x);
+                  }
+                }
+              }
+    </script>
+  </body>
+  
+</html>
