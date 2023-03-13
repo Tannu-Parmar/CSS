@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      const employee = {
+        details : function(){
+          return "<strong>Employee Name: </strong>" + this.Name + "<br><strong>Address: </strong>" + this.Address + "<br><strong>Designation: </strong>" + this.Designation;
+          
+        }
+      }
+      
+      const emp1 = {
+        Name: "Tannu",
+        Address: "Ahmedabad",
+        Designation: "Engineer"
+      }
+      const emp2 = {
+        Name: "Tanzz",
+        Address: "Baroda",
+        Designation: "Engineer"
+      }
+      const emp3 = {
+        Name: "Tamanna",
+        Address: "Surat",
+        Designation: "Engineer"
+      }
+
+      
+      document.getElementById("demo").innerHTML = employee.details.call(emp1); 
+      
+
+    </script>
+  </body>
+</html>

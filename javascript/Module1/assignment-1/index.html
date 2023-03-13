@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="num1">Please enter first number:</label>
+      <input type="text" id="num1">
+      <br>
+      <br>
+      <label for="num1">Please enter Second number</label>
+      <input type="text" id="num2">
+      <br>
+      <br>
+      <label for="num1" id="operation">Please select operation you want to perform : </label><br>
+      <input type="radio" id="add" name="operation" value="add">
+      <label for="add">Addition</label><br>
+      <input type="radio" id="sub" name="operation" value="sub">
+      <label for="sub">Subtraction</label><br>
+      <input type="radio" id="mul" name="operation" value="mul">
+      <label for="mul">Multiplication</label><br>
+      <input type="radio" id="div" name="operation" value="div">
+      <label for="div">Division</label><br>
+      
+      <br>
+      <button type="button" value="Submit" onclick="cal()">Calculate</button>
+      <button type="button" value="Submit" onclick="rst()">Reset</button>
+
+    </form>
+    <p id="ans"></p>
+
+    <script>
+      
+     
+      function cal(){
+        let n1 = parseInt(document.getElementById("num1").value);
+        let n2 = parseInt(document.getElementById("num2").value);
+        let result;
+        let op = document.querySelector('input[name="operation"]:checked').value;
+        
+        if(op == "add"){          
+          result = n1 + n2;         
+        }
+        if(op == "sub"){
+          result = n1 - n2;
+        }
+        if(op == "mul"){
+          result = n1 * n2;
+        }
+        if(op == "div"){
+          result = n1 / n2;
+        }
+        document.getElementById('ans').innerHTML = "<strong> Result is: </strong>" + result;
+      }
+
+      function rst() {
+        document.getElementById("myForm").reset();
+        document.getElementById("ans").innerHTML = " ";
+      }
+
+      
+
+    </script>
+  </body>
+</html>

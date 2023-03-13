@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <label for="str">Enter a Radius:</label>
+    <input type="number" id="Radius" />
+    <button onclick="area()">Calculate</button>
+    <p id="ans"></p>
+    <script>
+      const area = function (){
+        let r = document.getElementById('Radius').value;
+        console.log(r);
+        area_circle(r);
+      }
+
+      const area_circle = function(r) {
+        let a = (Math.PI * r * r).toFixed(2);
+        document.getElementById('ans').innerHTML = 'Area of the circle: ' + a;
+      }
+
+    </script>
+  </body>
+</html>

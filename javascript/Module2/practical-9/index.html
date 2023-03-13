@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <label for="str">Enter a String:</label>
+    <input type="text" id="str" />
+    <button onclick="check()">Submit</button>
+    <p id="demo"></p>
+    <script>
+      
+      function success(value){
+        document.getElementById("demo").innerHTML = value;
+      }
+      function error(err){
+        document.getElementById("demo").innerHTML = "Input is wrong";
+      }
+      function reverseString(str){
+        var newString = "";
+        for(var i = str.length - 1; i>=0; i--){
+          newString += str[i];
+        }
+        console.log(str);
+        return newString;
+      }
+
+      function check(){
+        let str = document.getElementById('str').value;
+        const myPromise = new Promise(function(myResolve, myReject){
+          setTimeout(function(){
+            myResolve(reverseString(str));
+          }, 500);
+        });
+        myPromise.then(
+          function(value) {success(value); },
+          function(err) {error(err); },
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>Explain difference between var and let keyword using example.</h1>
+   <p>Variables declared by let are only available inside the block where they're defined. Variables declared by var are available throughout the function in which they're declared.</p>
+    
+    <script>
+      var x = 10;
+
+      if(true){
+        var x = 20;
+        document.write("var changes in if: "+x);
+      }
+      document.write("<br> var changes out if: "+x);
+
+      let y = 10;
+      if(true){
+        let y = 20;
+        document.write("<br> let in the if:" +y);
+      }
+      document.write("<br> let in the if:" +y);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <label for="str">Enter a Width:</label>
+    <input type="number" id="width" /><br><br>
+    <label for="str">Enter a Height:</label>
+    <input type="number" id="height" /><br><br>
+    <button onclick="area()">Area of Rectangle</button><br>
+    <p id="rec"></p>
+
+    <script>
+      
+      function Rectangle(width, height) {
+        this.width = width;
+        this.height = height;
+        this.area = function(){
+          return this.width * this.height;
+           
+        }
+      }          
+
+      function area() {
+        let width = document.getElementById('width').value;
+        let height = document.getElementById('height').value;
+        let rect = new Rectangle(width, height);
+        document.getElementById('rec').innerHTML = "Area of Rectangle : " + rect.area();
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <form id="frm">
+      <label for="date">Date:</label>
+      <input type="text" id="date" name="date" placeholder="MM-DD-YYYY" >
+      <br><br>
+    </form>
+    <button type="button" id="btn" value="Submit" onclick="validate()">Submit</button>
+    <button type="button" id="btn" value="Submit" onclick="reset()">Reset</button>
+    <p id="info"></p>
+    <script>
+
+      function validate() {
+        let str = document.getElementById("date").value;
+
+        let m = str.slice(0, 2);
+        let d = str.slice(3, 5);
+        let y = str.slice(6, 10);
+        let ans = document.getElementById("info").innerHTML ;
+
+        if(m <= 0 || m > 12 ){          
+          document.getElementById("info").innerHTML = "Date is invalid";
+          ans.style.color = "red";
+        }
+        
+
+        if(m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m ==12){
+          if(d > 31){
+            console.log(m,d);
+            document.getElementById("info").innerHTML = "Date is invalid";
+          }
+        }
+
+        if(m == 4 || m == 6 || m == 9 || m == 11 ){
+          if(d > 30){
+            document.getElementById("info").innerHTML = "Date is invalid";
+          }
+        }
+        
+        if ((0 == y % 4) && (0 != y % 100) || (0 == y % 400)) {
+          if(m == 2){
+            if(d > 29){
+              document.getElementById("info").innerHTML = "Date is invalid";
+            }
+          }
+          
+        } 
+        else{
+          if(m == 2){
+            if(d > 28){
+            document.getElementById("info").innerHTML = "Date is invalid";
+          }
+          }
+        }
+
+      }
+
+      function reset() {
+        document.getElementById("frm").reset();
+        document.getElementById("info").innerHTML = " ";
+      }
+
+      
+    </script>
+  </body>
+</html>
