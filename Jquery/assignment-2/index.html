@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+  <script>
+  let productDetails = [
+  { ProductID: 1, Name: 'Entertainment', parentID: 'null' },
+  { ProductID: 2, Name: 'Food', parentID: 'null' },
+  { ProductID: 3, Name: 'Toy', parentID: 1 },
+  { ProductID: 4, Name: 'Speaker', parentID: 1 },
+  { ProductID: 5, Name: 'Milk', parentID: 2 },
+  { ProductID: 6, Name: 'Vegetables', parentID: 2 },
+];
+
+$(function () {
+  let ul = $('<ul></ul>');
+  $(ul).appendTo('body');
+  let p = productDetails.filter((d) => d.parentID === 'null');
+  $(p).each((ind, ele) => {
+    console.log(ele.ProductID); 
+    let li = $('<li></li>')
+      .text(ele.Name)
+      .attr('class', `parent${ele.ProductID}`)
+      .appendTo(ul);
+  });
+  let p1 = productDetails.filter((d) => d.parentID != 'null');
+  let innerul = $('<ul></ul>');
+  innerul.appendTo('.parent1');
+  let innerul2 = $('<ul></ul>');
+  innerul2.appendTo('.parent2');
+  $(p1).each((ind, ele) => {
+    if (ele.parentID == 1) {
+      console.log('teryt', ele.Name);
+      $('<li></li>').text(ele.Name).appendTo(innerul);
+    } else {
+      $('<li></li>').text(ele.Name).appendTo(innerul2);
+    }
+  });
+});
+
+  </script>
+  </body>
+</html>

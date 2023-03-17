@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <form id="form1">
+      <label for="country">Choose a Country:</label><br><br>
+      <select name="country" id="country">
+        <option value="please select">--Please select--</option>
+        <!-- <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="United-Kingdom">United Kingdom</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Turkey">Turkey</option> -->
+      </select>
+    </form>
+    <div id="country"></div>
+    <p></p>
+    
+    <script>
+      var obj =[
+        {"country" : "India"},
+        {"country" : "USA"},
+        {"country" : "United Kingdom"},
+        {"country" : "Switzerland"},
+        {"country" : "Turkey"},
+      ];  
+      for(let i=0; i<=obj.length-1; i++){
+        let y = obj[i].country
+        let x = document.createElement("span");
+        x.innerHTML = y;
+        $("#country").append(x);
+        let z = document.createElement("option");
+        z.innerHTML = y;
+        $("#country").append(z);
+      }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+      // $("#country").click(function(){
+      //   var a = $("select[id='country']").val();
+      //   $("p").text("You Have Selected :" + a)
+      // });
+
+      $("#country").click(function(){
+        $("span").hide();
+        var a = $("select[id='country']").val();
+        $("p").text("You Have Selected :" + a);
+        $('p').show();
+        if(a == "please select"){
+          $('span').show();
+          $('p').hide();
+        }
+      });
+    </script>
+  </body>
+</html>
+
+                                                                                   

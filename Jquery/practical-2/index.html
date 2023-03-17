@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <form id="form1">
+      <label for="text">Please select your technology:</label><br><br>
+      <input type="radio" id="tech" name="technology" value="PHP">PHP</input>
+      <input type="radio" id="tech" name="technology" value="ASP_NET">ASP.NET</input>
+      <input type="radio" id="tech" name="technology" value="ASP">ASP</input>
+      <input type="radio" id="tech" name="technology" value="JSP">JSP</input>
+      <input type="radio" id="tech" name="technology" value="PERL">PERL</input>
+      <input type="radio" id="tech" name="technology" value="Cold_Fusion">Cold Fusion</input>
+      <input type="radio" id="tech" name="technology" value="Other">Other</input><br><br>
+      <p></p>
+    </form><br>
+
+    <span class="PHP">More Details About PHP</span>
+    <span class="ASP_NET">More Details About ASP.NET</span>
+    <span class="ASP">More Details About ASP</span>
+    <span class="JSP">More Details About JSP</span>
+    <span class="PERL">More Details About PERL</span>
+    <span class="Cold_Fusion">More Details About Cold Fusion</span>
+    <span class="Other">More Details About Other</span>
+
+    
+    <script>  
+    $("span").hide();
+     $("#form1").click(function(){
+        $("span").hide();
+        var a = $('input:radio[id=tech]:checked').val();
+        $("p").text("You have selected :" + a);
+        $("." + a).show();
+      });
+      // $("#form1").click(function(){
+      //   $("span").hide();
+      //   var a = $('input:radio[id=tech]:checked').val();
+      //   $("p").text("You have selected :" + a);
+      //   console.log(a);
+      //   $("." + a).show();
+      // });
+      
+    </script>
+  </body>
+</html>
