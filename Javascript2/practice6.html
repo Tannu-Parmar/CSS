@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice6</title>
+</head>
+<body>
+    <input type="number" id="first" placeholder="Enter First String" required><br><br>
+    <input type="number" id="second" placeholder="Enter Second String" required><br><br>
+    <button onclick="myFunction(first.value, second.value)">Click To Check</button>
+
+    <script>
+        function myFunction(a, b){
+            if(a < b){
+                document.write(a / b);
+            }else{
+                document.write(a * b);
+            }
+        }
+    </script>
+</body>
+</html>

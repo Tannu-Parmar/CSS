@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice8</title>
+</head>
+<body>
+    <script>
+        let object = {
+            a: 1, 
+            b: 7, 
+            c: 3
+        }
+        let object1 = {
+            b: 0, 
+            a: 7, 
+            d: 8
+        }
+        function myFunction(object){
+            delete object.b
+            document.write(object);
+        }
+        myFunction(object);
+        myFunction(object1);
+    </script>
+
+    <script>
+        var obj={
+            a: 1, b: 7, c: 3
+        }
+        var obj1 = {
+            b: 0, a: 7, d: 8 
+        }
+        function myFunction(obj){
+            delete obj.b;
+            document.write(obj);
+        }
+        myFunction(obj);
+        myFunction(obj1);
+    </script>
+</body>
+</html>

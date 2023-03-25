@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice7</title>
+</head>
+
+<body>
+    <script>
+        let numbers = [11, 67, 89, 56, 33, 76, 84];
+        numbers.sort(function (a, b) {
+            if (a > b) return -1;
+            if (a < b) return 1;
+            return 0;
+        });
+
+        document.write(numbers + "<br><br>");
+    </script>
+    <!-- <script>
+        let num = [11, 67, 89, 56, 33, 76, 84];
+
+        num.sort((a, b) => b - a);
+
+        document.write(num);
+    </script> -->
+</body>
+
+</html>
