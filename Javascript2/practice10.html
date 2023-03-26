@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice10</title>
+  </head>
+  <body>
+    <script>
+      // var arr = ['I', 'need', 'candy']
+      // var counter = 0
+      // var elem = arr[0]
+      // for(let i=0; i<=arr.length; i++){
+      //     var len = arr[i].length
+      //     if(len > prevCounter){
+      //         elem = arr[i]
+      //     }
+      // }
+      // console.log(elem);
+      var arr = ['I', 'need', 'candy']
+
+      var lgth = 0
+      var longest
+
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i].length > lgth) {
+          var lgth = arr[i].length
+          longest = arr[i]
+        }
+      }
+
+      document.write(longest)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice12</title>
+</head>
+<body>
+    <script>
+        var arr = ["a", "b", "a", "c", "b"]
+        var tempArr = []
+        var obj = {}
+        for (let i=0; i<arr.length; i++){
+            var counter = 1
+            if(tempArr.find(elem => elem == arr[i])){
+                continue
+            }else{
+                tempArr.push(arr[i])
+                for(let j=i+1; j<arr.length; j++){
+                    var tempVar = arr[i]
+                    if((arr[i] === arr[j]) && (i != j)){
+                        counter++;
+                    } 
+                }
+                obj[tempVar] = counter
+            }
+        }
+        console.log(obj);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice14</title>
+  </head>
+  <body>
+    <script>
+      function checkNumberIfFloat(value) {
+        return Number(value) === value && value % 1 !== 0
+      }
+      var value1 = 10
+      var value2 = 10.15
+      if (checkNumberIfFloat(value1) == true){
+        console.log('The value is float=' + value1)
+    } else{
+        console.log('The value is not float=' + value1)
+    } if(checkNumberIfFloat(value2) == true){
+        console.log('The value is float=' + value2)
+    }else {
+        console.log('The value is not float=' + value2)
+    }
+    </script>
+  </body>
+</html>
