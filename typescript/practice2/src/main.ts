@@ -39,5 +39,3 @@ const handleArtistsResponse = (response: ArtistsResponse) => {
   console.log(response.artists);
 };
 
-handleArtistsResponse()
-
