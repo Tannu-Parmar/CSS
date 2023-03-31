@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="searchEmpDiv">
+      <h3>Search employee</h3>
+      <input type="number" id="empId" />
+      <button type="submit" onclick="searchEmp()">Search</button>
+      <div id="searchEmpTable"></div>
+    </div>
+
+    <div id="empAfter">
+      <button type="submit" onclick="searchEmpAfter()">search employee after 2020</button>
+      <div id="afterTable"></div>
+    </div>
+
+    <div id="empAfterJoinCity">
+      <button type="submit" onclick="searchEmpJoinCity()">search employee after 2020 and city mumbai</button>
+      <div id="afterTableJoinCity"></div>
+    </div>
+    <script src="/src/script.js"></script>
+  </body>
+</html>
