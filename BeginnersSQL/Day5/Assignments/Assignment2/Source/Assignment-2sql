@@ -1,0 +1,291 @@
+-- Active: 1680610751997@@radixusers3.com@3306@tamanna_parmar4
+
+CREATE TABLE
+    Employee (
+        EMPLOYEE_ID INT PRIMARY KEY AUTO_INCREMENT,
+        FIRST_NAME VARCHAR(50),
+        LAST_NAME VARCHAR(50),
+        SALARY BIGINT,
+        JOINING_DATE DATETIME,
+        DEPARTMENT VARCHAR(25),
+        MANAGER_ID INT
+    );
+
+
+INSERT INTO `Employee`
+VALUES (
+        1,
+        'John',
+        'Abraham',
+        1000000,
+        '2013-01-01 12.00.00',
+        'Banking',
+        NULL
+    ), (
+        2,
+        'Michael',
+        'Clarke',
+        800000,
+        '2013-01-01 12.00.00',
+        'Insurance',
+        1
+    ), (
+        3,
+        'Roy',
+        'Thomas',
+        700000,
+        '2013-02-01 12.00.00',
+        'Banking',
+        1
+    ), (
+        4,
+        'Tom',
+        'Jose',
+        600000,
+        '2013-02-01 12.00.00',
+        'Insurance',
+        2
+    ), (
+        5,
+        'Jerry',
+        'Pinto',
+        650000,
+        '2013-02-01 12.00.00',
+        'Insurance',
+        3
+    ), (
+        6,
+        'Philip',
+        'Mathew',
+        750000,
+        '2013-01-01 12.00.00',
+        'Services',
+        3
+    ), (
+        7,
+        'TestName1',
+        '123',
+        650000,
+        '2013-01-01 12.00.00',
+        'Services',
+        2
+    ), (
+        8,
+        'TestName2',
+        'Lname%',
+        600000,
+        '2013-02-01',
+        'Insurance',
+        2
+    );
+
+CREATE TABLE
+Incentives (
+    EMPLOYEE_REF_ID INT,
+    INCENTIVE_DATE DATETIME,
+    INCENTIVE_AMOUNT BIGINT,
+    Foreign Key (EMPLOYEE_REF_ID) REFERENCES Employee(EMPLOYEE_ID)
+);
+
+INSERT INTO `Incentives`
+VALUES (
+    1, 
+    '2013-02-01 12.00.00', 
+    5000
+), (
+    2, 
+    '2013-02-01 12.00.00', 
+    3000
+), (
+    3, 
+    '2013-02-01 12.00.00', 
+    4000
+), (
+    3, 
+    '2013-02-01 12.00.00', 
+    4000
+), (
+    4, 
+    '2013-01-01 12.00.00', 
+    4500
+), (
+    2, 
+    '2013-01-01 12.00.00', 
+    3500
+);
+
+
+-- 1. Create a Store Procedure Select Banking as 'Bank Dept', Insurance as 'Insurance Dept' and Services as 'Services Dept' from employee table 
+CREATE PROCEDURE SELECTDEPT() BEGIN 
+	SELECT
+	    *,
+	    CASE
+	        WHEN `Department` = "Banking" THEN "Bank Dept"
+	        WHEN `Department` = "Insurance" THEN "Insurance Dept"
+	        WHEN `Department` = "Services" THEN "Services Dept"
+	        ELSE `Department`
+	    END as `Department`
+	from `Employee`;
+	END ; 
+
+CALL SELECTDEPT();
+
+
+-- 2. Select Employee details from employee table if data exists in incentive table ? 
+CREATE PROCEDURE P1()
+BEGIN
+    SELECT * FROM Employee WHERE EXISTS(SELECT * FROM `Incentives` WHERE `EMPLOYEE_ID` = `EMPLOYEE_REF_ID`);
+END;
+
+CALL P1();
+
+
+-- 3. Find Salary of the employee whose salary is more than Roy Salary 
+CREATE PROCEDURE P2()
+BEGIN
+    SELECT * from Employee WHERE `SALARY` > (SELECT `SALARY` FROM Employee WHERE `FIRST_NAME` = 'Roy');
+END;
+
+CALL P2();
+
+
+-- 4. Create a view to select FirstName,LastName,Salary,JoiningDate,IncentiveDate and IncentiveAmount 
+CREATE PROCEDURE P3()
+BEGIN
+    CREATE View p3 AS SELECT e.`FIRST_NAME`,e.`LAST_NAME`,e.`SALARY`,e.`JOINING_DATE`,i.`INCENTIVE_DATE`,i.`INCENTIVE_AMOUNT` FROM
+    `Employee` e JOIN `Incentives` i ON e.`EMPLOYEE_ID` = i.`EMPLOYEE_REF_ID`;
+END;
+
+CALL `P3`();
+SELECT * from p3;
+
+
+--  5. Create a view to select Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000
+CREATE PROCEDURE P4()
+BEGIN
+    CREATE View p4 AS SELECT e.`FIRST_NAME`,i.`INCENTIVE_AMOUNT` FROM
+    `Employee` e JOIN `Incentives` i ON e.`EMPLOYEE_ID` = i.`EMPLOYEE_REF_ID` 
+    WHERE `INCENTIVE_AMOUNT` > 3000
+    ;
+END;
+
+CALL `P4`();
+SELECT * from p4;
+
+
+
+-- #Assignment-2
+
+-- 6. 5 Students Name, Address, City, DOB, Standard need to be inserted in the student table, need to fetch these result from json variable. and select output in the json format Note: use exception handling 
+set @data='[
+    {
+        "Student_Name" : "Abc",
+        "Address": "123 abc cdf",
+        "City" : "Ahmedabad",
+        "DOB" : "22-09-2001",
+        "Standard" : 10
+    },
+    {
+        "Student_Name" : "Cdf",
+        "Address": "123 abc cdf",
+        "City" : "Surat",
+        "DOB" : "22-09-2001",
+        "Standard" : 10
+    },
+    {
+        "Student_Name" : "Xyz",
+        "Address": "123 abc cdf",
+        "City" : "Vapi",
+        "DOB" : "22-09-2001",
+        "Standard" : 10
+    },
+    {
+        "Student_Name" : "Pqr",
+        "Address": "123 abc cdf",
+        "City" : "Rajkot",
+        "DOB" : "22-09-2001",
+        "Standard" : 10
+    }
+
+]';
+
+
+CREATE TABLE demo(
+    ID int not NULL AUTO_INCREMENT PRIMARY KEY,
+    Student_Name varchar(50) ,
+
+    Address varchar(50) ,
+
+    City varchar(50) ,
+
+    DOB varchar(50) ,
+
+    Standard INT 
+
+);
+
+
+insert into demo (Student_Name,Address,City,DOB,Standard)
+
+SELECT s.`Student_Name`,s.`Address`,s.`City`,s.`DOB`,s.`Standard`
+
+FROM
+
+ JSON_TABLE(
+
+ @data,
+
+ "$[*]" COLUMNS(
+
+    Student_Name varchar(50) PATH "$.Student_Name",
+
+    Address varchar(50) PATH "$.Address",
+
+    City varchar(50) PATH "$.City",
+
+    DOB varchar(50) PATH "$.DOB",
+
+    Standard INT PATH "$.Standard"
+
+ )
+
+ ) as assg;
+
+
+
+--   7. 5 Students Name, Address, City, DOB, Standard need to be inserted in the student table, need to fetch these result from json variable using input parameter. and select output in the json format. Note: use exception handling
+SELECT JSON_ARRAYAGG(JSON_OBJECT(
+    'id', id,
+    'Student_Name',Student_Name,
+    'Address',Address,
+    'City',City,
+    'DOB',DOB,
+    'Standard',Standard
+)) AS Students_Data FROM demo;
+
+
+
+--  8 Create a procedure which will accept StudentId, StudentName, CourseID, CourseName as a input parameter in json format and insert record in 2 table student and course table
+CREATE PROCEDURE Add_student_course(IN json_data JSON)
+BEGIN
+
+    CREATE TABLE Student(id int not null, name varchar(50));
+    CREATE TABLE Course(id int not null, name varchar(50));
+
+    SET @StudentId = JSON_UNQUOTE(JSON_EXTRACT(json_data,'$.StudentId'));
+    SET @StudentName = JSON_UNQUOTE(JSON_EXTRACT(json_data,'$.StudentName'));
+    SET @CourseID = JSON_UNQUOTE(JSON_EXTRACT(json_data,'$.CourseId'));
+    SET @CourseName = JSON_UNQUOTE(JSON_EXTRACT(json_data,'$.CourseName'));
+
+    INSERT INTO Student(id,name) VALUES (@StudentId,@StudentName);
+    INSERT INTO Course(id,name) VALUES (@CourseID,@CourseName);
+END;
+
+CALL Add_student_course(
+    '{
+        "StudentId" : 1,
+        "StudentName" : "qwerty",
+        "CourseId" : 111,
+        "CourseName" : "Computer"
+    }'
+);
